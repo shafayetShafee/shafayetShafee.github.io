@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="460px" viewBox="0 0 500 460" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400&amp;display=swap');
+      
+      text {
+        font-family: 'Grenze Gotisch', serif;
+        font-weight: 400;
+        font-size: 158px;
+        fill: #000000;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+    </style>
+  </defs>
+
+  <!-- Fat hexagon (flat-top, nice and wide) -->
+  <polygon points="250,30 420,130 420,330 250,430 80,330 80,130"
+           fill="#cbcbcb"
+           stroke="#000000"
+           stroke-width="14"/>
+
+  <!-- SKS text perfectly centered -->
+  <text x="250" y="235">SKS</text>
+
+</svg>
