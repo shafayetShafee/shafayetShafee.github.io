@@ -5,13 +5,33 @@ execute:
   freeze: auto
 
 website:
-  description: "A blog built with Quarto"
+  title: "SKS"
+  description: "Personal Protfolio of Shafayet Khan Shafee"
+  favicon: /assets/images/logo.svg
+  image: /assets/images/bw_propic.jpeg
   site-url: https://shafayetshafee.github.io
-  title: "Shafayet Khan Shafee"
+  repo-url: https://github.com/shafayetShafee/shafayetShafee.github.io
+  repo-actions: [edit, issue]
+  open-graph: true
+  twitter-card: true
+  page-navigation: true
+  back-to-top-navigation: true
+  page-footer:
+    border: true
+    left: |
+      Built with [{{< iconify logos:r-lang title="R Logo" label="R Logo" >}}](https://www.r-project.org/)  & [Quarto](https://quarto.org).
+    center: |
+      Copyright &copy; 2025 Shafayet Khan Shafee
+    right: |
+      License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0)
   search: 
     location: navbar
     type: overlay
   navbar:
+    title: "SKU"
+    search: true
+    logo: assets/images/logo.svg
+    logo-alt: "Shafayet Khan Shafee logo"
     left:
       - href: index.qmd
         text: Home
@@ -46,6 +66,10 @@ format:
     css: styles.css
     toc: true
     page-layout: full
+    respect-user-color-scheme: true
+    email-obfuscation: javascript
+    link-external-newwindow: true
+    lightbox: true
 
 
 

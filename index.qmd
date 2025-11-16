@@ -1,6 +1,6 @@
 ---
 title: "Shafayet Khan Shafee"
-image: images/bw_propic.jpeg
+image: assets/images/bw_propic.jpeg
 about:
   template: jolla
   image-width: 20em
