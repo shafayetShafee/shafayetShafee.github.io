@@ -12,7 +12,7 @@ about:
     - icon: bluesky
       text: Bluesky
       href: https://bsky.app/profile/kshafayet.bsky.social
-    - icon: twitter
+    - icon: twitter-x
       text: Twitter
       href: https://x.com/shafayet_shafee
     - icon: linkedin
@@ -44,4 +44,4 @@ double machine learning, and causal forests. I'm also very enthusiastic about OS
 development: I build R packages, Python packages, and Quarto extensions, and I'm 
 always looking for ways to improve the tools I rely on. R is my first love, but I 
 also work comfortably with Python and SQL, and I'm currently exploring Rust and 
-Julia to broaden my toolkit—mostly because they're fast!!
+Julia to broaden my toolkit, mostly because they're fast!!

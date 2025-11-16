@@ -11,11 +11,9 @@ website:
   image: /assets/images/bw_propic.jpeg
   site-url: https://shafayetshafee.github.io
   repo-url: https://github.com/shafayetShafee/shafayetShafee.github.io
-  repo-actions: [edit, issue]
+  repo-link-target: "_blank"
   open-graph: true
   twitter-card: true
-  # page-navigation: true
-  # back-to-top-navigation: true
   page-footer:
     border: true
     left: |
@@ -24,28 +22,28 @@ website:
       Copyright &copy; 2025 Shafayet Khan Shafee
     right: |
       License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0)
-  search: 
-    location: navbar
-    type: overlay
+  # search: 
+  #   location: navbar
+  #   type: overlay
   navbar:
     title: "SKS"
-    search: true
+    # search: true
     logo: assets/images/logo.svg
     logo-alt: "Shafayet Khan Shafee logo"
     left:
       - href: index.qmd
-        text: Home
-      - href: projects.qmd
-        text: Projects
-      - href: resume.qmd
-        text: Resume
+        text: About
+      # - href: projects.qmd
+      #   text: Projects
+      # - href: resume.qmd
+      #   text: Resume
         
     right:
       - icon: mastodon
         href: https://fosstodon.org/@shafayet_shafee
       - icon: bluesky
         href: https://bsky.app/profile/kshafayet.bsky.social
-      - icon: twitter
+      - icon: twitter-x
         href: https://x.com/shafayet_shafee
       - icon: linkedin
         href: https://www.linkedin.com/in/shafayetshafee/
@@ -61,10 +59,14 @@ website:
 format:
   html:
     theme:
-      light: cosmo
-      dark: solar
-    css: styles.css
-    toc: true
+      light: 
+        - cosmo
+        - brand
+        - assets/stylesheets/theme.scss
+      dark: 
+        - solar
+        - brand
+        - assets/stylesheets/theme.scss
     page-layout: full
     respect-user-color-scheme: true
     email-obfuscation: javascript
