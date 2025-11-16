@@ -14,8 +14,8 @@ website:
   repo-actions: [edit, issue]
   open-graph: true
   twitter-card: true
-  page-navigation: true
-  back-to-top-navigation: true
+  # page-navigation: true
+  # back-to-top-navigation: true
   page-footer:
     border: true
     left: |
@@ -28,7 +28,7 @@ website:
     location: navbar
     type: overlay
   navbar:
-    title: "SKU"
+    title: "SKS"
     search: true
     logo: assets/images/logo.svg
     logo-alt: "Shafayet Khan Shafee logo"
@@ -69,7 +69,6 @@ format:
     respect-user-color-scheme: true
     email-obfuscation: javascript
     link-external-newwindow: true
-    lightbox: true
 
 
 
