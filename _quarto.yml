@@ -1,0 +1,49 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  description: "A blog built with Quarto"
+  site-url: https://shafayetshafee.github.io
+  title: "Shafayet Khan Shafee"
+  search: 
+    location: navbar
+    type: overlay
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects.qmd
+        text: Projects
+      - href: resume.qmd
+        text: Resume
+        
+    right:
+      - icon: mastodon
+        href: https://fosstodon.org/@shafayet_shafee
+      - icon: bluesky
+        href: https://bsky.app/profile/kshafayet.bsky.social
+      - icon: twitter
+        href: https://x.com/shafayet_shafee
+      - icon: linkedin
+        href: https://www.linkedin.com/in/shafayetshafee/
+      - icon: github
+        href: https://github.com/shafayetShafee
+      - text: '{{< iconify fa6-brands:google-scholar >}}'
+        href: https://scholar.google.com/citations?user=GSgDEx0AAAAJ&hl=en
+      - text: '{{< iconify academicons:orcid >}}'
+        href: https://orcid.org/0009-0002-8021-3788
+      - icon: envelope-at-fill
+        href: mailto:sshafee@isrt.ac.bd
+        
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: solar
+    css: styles.css
+    toc: true
+    page-layout: full
+
+
+

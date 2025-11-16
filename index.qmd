@@ -1,0 +1,47 @@
+---
+title: "Shafayet Khan Shafee"
+image: images/bw_propic.jpeg
+about:
+  template: jolla
+  image-width: 20em
+  image-shape: round
+  links:
+    - icon: mastodon
+      text: Mastodon
+      href: https://fosstodon.org/@shafayet_shafee
+    - icon: bluesky
+      text: Bluesky
+      href: https://bsky.app/profile/kshafayet.bsky.social
+    - icon: twitter
+      text: Twitter
+      href: https://x.com/shafayet_shafee
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/shafayetshafee/
+    - icon: github
+      text: Github
+      href: https://github.com/shafayetShafee
+    - text: '{{< iconify fa6-brands:google-scholar style="margin-right: 0.15em;" >}} Google Scholar'
+      href: https://scholar.google.com/citations?user=GSgDEx0AAAAJ&hl=en
+    - text: '{{< iconify academicons:orcid style="margin-right: 0.15em" >}} ORCID'
+      href: https://orcid.org/0009-0002-8021-3788
+    - icon: envelope-at-fill
+      text: Mail
+      href: mailto:sshafee@isrt.ac.bd
+---
+
+
+
+I'm a data scientist and statistician who enjoys turning complex data problems into 
+clear, actionable insights. My work spans machine learning, causal inference, and 
+experimentation, and I love thinking about how we can use statistical reasoning to 
+guide real product and business decisions. I spend a lot of time designing experiments 
+and developing scalable data workflows.
+
+Lately, I've been digging deeper into methods at the intersection of causal inference 
+and hierarchical modeling, as well as modern causal ML approaches like metalearners, 
+double machine learning, and causal forests. I'm also very enthusiastic about OSS 
+development: I build R packages, Python packages, and Quarto extensions, and I'm 
+always looking for ways to improve the tools I rely on. R is my first love, but I 
+also work comfortably with Python and SQL, and I'm currently exploring Rust and 
+Julia to broaden my toolkit—mostly because they're fast!!
