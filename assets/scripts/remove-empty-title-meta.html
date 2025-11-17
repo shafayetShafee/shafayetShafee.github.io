@@ -1,0 +1,10 @@
+<script>
+window.document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".quarto-title-meta").forEach(el => {
+    if (!el.querySelector("*") && el.textContent.trim() === "") {
+      el.remove();
+      // el.style.display = "none";
+    }
+  });
+});
+</script>

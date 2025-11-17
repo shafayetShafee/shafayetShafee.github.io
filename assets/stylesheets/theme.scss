@@ -1,13 +1,27 @@
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+$navbar-font-family: "Alegreya Sans", sans-serif;
+
 /*-- scss:rules --*/
 
 html {
   scroll-behavior: smooth;
 }
 
+div:empty,
+p:empty {
+  display: none !important;
+}
+
 .navbar-title {
   color: $foreground !important;
 }
 
+.navbar {
+  font-family: $navbar-font-family;
+  font-weight: 500;
+}
 
 // ─────────────────────────────────────────────────────────────
 //  COLOR SCHEME TOGGLE – Dimmed for a softer, elegant look
@@ -68,7 +82,7 @@ body.quarto-dark .navbar-toggler-icon {
     align-items: center;
     color: var(--bs-primary);
     margin-right: 8px;
-    margin-top: 4px;
+    margin-top: 10px;
     margin-bottom: 4px;
     font-size: 0.8em;
 }
