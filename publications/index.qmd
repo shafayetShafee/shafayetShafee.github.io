@@ -2,8 +2,10 @@
 title: "Publications"
 jupyter: python3
 execute:
-  freeze: false
+  freeze: true
 ---
+
+:::{.publications}
 
 Below is a full list of my published works, including links to open PDFs, associated 
 datasets, code and software, where applicable. 
@@ -35,3 +37,4 @@ HTML(html)
 
 ```
 
+:::

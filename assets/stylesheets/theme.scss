@@ -14,14 +14,18 @@ p:empty {
   display: none !important;
 }
 
-.navbar-title {
-  color: $foreground !important;
-}
-
 .navbar {
   font-family: $navbar-font-family;
-  font-weight: 500;
+  
+  .navbar-title {
+    color: $foreground !important;
+  }
+  
+  .navbar-nav .nav-link.active {
+    font-weight: 500;
+  }   
 }
+
 
 body>header#title-block-header {
   margin-bottom: 0rem;
@@ -99,5 +103,184 @@ body.quarto-dark .navbar-toggler-icon {
 .pub-button i {
     margin-right: 5px;
     font-size: 2em;
+}
+
+
+#quarto-content:has(.publications) {
+  overflow-x: hidden;
+  
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: $foreground;
+    position: relative;
+    padding-bottom: 0.75rem;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, $foreground 0%, rgba($foreground, 0.3) 100%);
+      transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover::after {
+      width: 100px;
+    }
+  }
+  
+  h2.anchored {
+    border-bottom: 1px solid rgba($foreground, 0.15) !important;
+  }
+}
+
+
+// ===========================
+// ABOUT PAGE - HERO BANNER
+// ===========================
+
+// Hero banner styling for Solana about template with gradient orbs
+.quarto-about-solana {
+  position: relative;
+  padding: 3rem 0;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  background:
+    radial-gradient(ellipse at top left, rgba($foreground, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom right, rgba($foreground, 0.06) 0%, transparent 50%),
+    linear-gradient(135deg, rgba($foreground, 0.02) 0%, rgba($foreground, 0.05) 100%);
+  border-radius: 0;
+  box-shadow: 0 4px 16px rgba($foreground, 0.08);
+  overflow: hidden;
+
+  // Gradient orbs overlay
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    background:
+      radial-gradient(circle at 30% 40%, rgba($foreground, 0.12) 0%, transparent 30%),
+      radial-gradient(circle at 70% 60%, rgba($foreground, 0.1) 0%, transparent 30%),
+      radial-gradient(circle at 50% 20%, rgba($foreground, 0.08) 0%, transparent 20%);
+    pointer-events: none;
+    opacity: 0.6;
+    animation: orbsMove 20s ease-in-out infinite alternate;
+  }
+
+  .about-entity {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem;
+
+    .entity-contents {
+      .quarto-title-block {
+        text-align: center;
+
+        .quarto-title {
+          .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, $foreground 0%, rgba($foreground, 0.7) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+
+            @media (max-width: 768px) {
+              font-size: 2rem;
+            }
+          }
+
+          .subtitle {
+            font-size: 1.2rem;
+            color: rgba($foreground, 0.8);
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+
+            @media (max-width: 768px) {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+
+      .about-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+        margin-top: 1.5rem;
+
+        .about-link {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.4rem 0.6rem;
+          background-color: rgba($foreground, 0.08);
+          border: 1px solid rgba($foreground, 0.15);
+          border-radius: 8px;
+          color: rgba($foreground, 0.85);
+          text-decoration: none;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          font-size: 0.8rem;
+          min-width: 2.5rem;
+
+          .about-link-text {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+          }
+
+          &:hover {
+            background-color: rgba($foreground, 0.12);
+            border-color: rgba($foreground, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba($foreground, 0.15);
+            color: $foreground;
+          }
+
+          &:active {
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+
+    // Profile image styling (override existing)
+    .about-image {
+      border: 4px solid rgba($foreground, 0.1);
+      box-shadow: 0 8px 24px rgba($foreground, 0.15);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 32px rgba($foreground, 0.2);
+        border-color: rgba($foreground, 0.2);
+      }
+    }
+  }
+
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    padding: 2rem 0;
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+
+    .about-entity {
+      padding: 0 1.5rem;
+    }
+  }
 }
 

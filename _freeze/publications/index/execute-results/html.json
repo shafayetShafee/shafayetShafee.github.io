@@ -1,0 +1,16 @@
+{
+  "hash": "e3a7508ab3740ac81001c28258e8d289",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Publications\"\njupyter: python3\nexecute:\n  freeze: true\n---\n\n:::{.publications}\n\nBelow is a full list of my published works, including links to open PDFs, associated \ndatasets, code and software, where applicable. \n\n::: {#3c1bdb50 .cell execution_count=1}\n\n::: {.cell-output .cell-output-display execution_count=1}\n```{=html}\n<h2>2025</h2>\n<ul>\n  <li>\n    <p>\n      <strong>S.K. Shafee</strong>, M.N.I. Sium, B. Sarker, R. Islam; \n      <span style=\"color: var(--bs-primary); font-weight: bold;\">Investigating the causal effect of maternal continuum of care on child’s minimum acceptable diet: A multilevel approach using partially pooled propensity score weighting</span>; <i>PLOS One</i> 20(11) : e0335972<br>\n      <a class=\"pub-button\" href=\"https://doi.org/10.1371/journal.pone.0335972\" target=\"_blank\"><i class=\"ai ai-doi\"></i>DOI</a>\n      <a class=\"pub-button\" href=\"https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0335972&amp;type=printable\" target=\"_blank\"><i class=\"fa fa-file-pdf\"></i>PDF</a>\n      <a class=\"pub-button\" href=\"https://doi.org/10.6084/m9.figshare.30073489\" target=\"_blank\"><i class=\"ai ai-open-data\"></i>Paper Data</a>\n      <a class=\"pub-button\" href=\"https://github.com/shafayetShafee/mad-coc-IPW/\" target=\"_blank\"><i class=\"fa-brands fa-github\"></i>Paper Code</a>\n    </p>\n  </li>\n</ul>\n```\n:::\n:::\n\n\n:::\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {
+      "include-in-header": [
+        "<script src=\"https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js\" integrity=\"sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx\" crossorigin=\"anonymous\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js\" integrity=\"sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2\" crossorigin=\"anonymous\" data-relocate-top=\"true\"></script>\n<script type=\"application/javascript\">define('jquery', [],function() {return window.jQuery;})</script>\n"
+      ]
+    }
+  }
+}

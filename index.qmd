@@ -1,47 +1,97 @@
 ---
 title: "Shafayet Khan Shafee"
-image: assets/images/bw_propic.jpeg
+subtitle: |
+  Statistician, autodidact, and bibliophile.
+image: assets/images/bw_propic_crop.jpeg
+format:
+  html:
+    grid:
+      body-width: 800px
 about:
-  template: jolla
-  image-width: 20em
+  id: hero-banner
+  template: solana
+  image-width: 9em
   image-shape: round
   links:
     - icon: mastodon
       text: Mastodon
       href: https://fosstodon.org/@shafayet_shafee
+      target: "_blank"
     - icon: bluesky
       text: Bluesky
       href: https://bsky.app/profile/kshafayet.bsky.social
+      target: "_blank"
     - icon: twitter-x
       text: Twitter
       href: https://x.com/shafayet_shafee
+      target: "_blank"
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/shafayetshafee/
+      target: "_blank"
     - icon: github
       text: Github
       href: https://github.com/shafayetShafee
+      target: "_blank"
     - text: '{{< iconify fa6-brands:google-scholar style="margin-right: 0.15em;" >}} Google Scholar'
       href: https://scholar.google.com/citations?user=GSgDEx0AAAAJ&hl=en
+      target: "_blank"
     - text: '{{< iconify academicons:orcid style="margin-right: 0.15em" >}} ORCID'
       href: https://orcid.org/0009-0002-8021-3788
+      target: "_blank"
     - icon: envelope-at-fill
       text: Mail
       href: mailto:sshafee@isrt.ac.bd
 ---
 
+::: {#hero-banner}
+
+:::
+
+::: {.about-body}
+
+I'm a **Data scientist** and **Statistician** who enjoys using statistical thinking to shape 
+real product and business decisions. My interests and expertise lie at the intersection of 
+applied statistics, machine learning, and open-source development, turning rigorous analytical 
+ideas into practical tools, software and workflows.
 
 
-I'm a data scientist and statistician who enjoys turning complex data problems into 
-clear, actionable insights. My work spans machine learning, causal inference, and 
-experimentation, and I love thinking about how we can use statistical reasoning to 
-guide real product and business decisions. I spend a lot of time designing experiments 
+## {{< iconify streamline-freehand:office-work-wireless >}} What I Do
+
+I translate complex data problems into clear, actionable insights. My work spans machine 
+learning, causal inference, and experimentation, and I spend a lot of time designing experiments 
 and developing scalable data workflows.
 
-Lately, I've been digging deeper into methods at the intersection of causal inference 
-and hierarchical modeling, as well as modern causal ML approaches like metalearners, 
-double machine learning, and causal forests. I'm also very enthusiastic about OSS 
-development: I build R packages, Python packages, and Quarto extensions, and I'm 
-always looking for ways to improve the tools I rely on. R is my first love, but I 
-also work comfortably with Python and SQL, and I'm currently exploring Rust and 
-Julia to broaden my toolkit, mostly because they're fast!!
+Lately, I've been digging deeper into methods at the intersection of *causal inference* and
+*hierarchical modeling*, as well as modern causal ML approaches like metalearners, 
+double machine learning, and causal forests. I'm also very enthusiastic about OSS development: 
+I have developed a few {{< iconify fa7-brands:r-project title="R" label="R" >}}&nbsp;packages, 
+{{< iconify carbon:logo-python title="Python" label="Python" >}}&nbsp;packages, and Quarto 
+extensions, and I'm always looking for ways to improve the tools I rely on. **R** is my first love
+{{< iconify octicon:heart-fill-16 title="Love" label="Love" >}}, but I also work comfortably with 
+**Python** & **SQL** {{< iconify mingcute:fire-fill >}}, and I'm currently exploring **Rust** and 
+**Julia** to broaden my toolkit, mostly because they're fast 
+{{< iconify ic:round-rocket-launch >}}{{< iconify ic:round-rocket-launch >}}!!
+
+
+## {{< iconify clarity:briefcase-line >}} Work Experience {.education}
+
+- **Data Scientist I** @ [Pathao Ltd.](https://pathao.com/?lang=en) <br>
+  *Jan, 2025 - Present* <br>
+  Dhaka, Bangladesh
+
+- **Graduate Data Scientist** @ [Pathao Ltd.](https://pathao.com/?lang=en) <br>
+  *July, 2023 - Dec, 2024* <br>
+  Dhaka, Bangladesh
+
+## {{< iconify qlementine-icons:education-24 >}} Education {.education}
+
+- **_M.Sc._ in Applied Statistics**, **2023** <br>
+  Grade: _**3.97** out of 4.00_ <br>
+  ISRT, University of Dhaka, Bangladesh
+
+- **_B.Sc._ in Applied Statistics**, **2021** <br>
+  Grade: _**3.96** out of 4.00_ <br>
+  ISRT, University of Dhaka, Bangladesh
+
+:::
