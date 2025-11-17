@@ -1,5 +1,8 @@
 project:
   type: website
+  render:
+    - "*.qmd"
+    - "!uv-cache/"
   
 execute:
   freeze: auto
@@ -22,17 +25,19 @@ website:
       Copyright &copy; 2025 Shafayet Khan Shafee
     right: |
       License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0)
-  # search: 
-  #   location: navbar
-  #   type: overlay
+  search:
+    location: navbar
+    type: overlay
   navbar:
     title: "SKS"
-    # search: true
+    search: true
     logo: assets/images/logo.svg
     logo-alt: "Shafayet Khan Shafee logo"
     left:
       - href: index.qmd
         text: About
+      - href: publications/index.qmd
+        text: Publications
       # - href: projects.qmd
       #   text: Projects
       # - href: resume.qmd
@@ -71,6 +76,9 @@ format:
     respect-user-color-scheme: true
     email-obfuscation: javascript
     link-external-newwindow: true
+    css:
+      - "https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css"
+      - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 
 
 

@@ -1,0 +1,10 @@
+shafee_investigating_the_causal_2025:
+  - link: https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0335972&type=printable
+    icon: fa fa-file-pdf
+    text: PDF
+  - link: https://doi.org/10.6084/m9.figshare.30073489
+    icon: ai ai-open-data
+    text: Paper Data
+  - link: https://github.com/shafayetShafee/mad-coc-IPW/
+    icon: fa-brands fa-github
+    text: Paper Code

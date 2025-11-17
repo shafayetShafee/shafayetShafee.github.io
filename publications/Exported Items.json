@@ -1,0 +1,61 @@
+[
+	{
+		"id": "http://zotero.org/users/12466491/items/Y8UY24AK",
+		"type": "article-journal",
+		"abstract": "Malnutrition contributes to half of child mortality in low- and middle-income countries like Bangladesh. It’s challenging for a developing country to improve child nutrition using limited resources and other difficulties. This underscores the importance of developing and implementing targeted interventions that effectively address these constraints. This study addresses this gap by investigating whether a mother receiving complete continuum of care comprising antenatal care, skilled birth attendance, and postnatal care improves the child’s likelihood of achieving a minimum acceptable diet, an indicator combining minimum dietary diversity and minimum meal frequency. Analyzing data of 6,494 mother-child pairs from the 2019 Bangladesh Multiple Indicator Cluster Survey, we applied a multilevel modelling approach with partially pooled propensity score weighting to control for potential confounders and account for district-level variations. The results show that mothers who received complete continuum of care increased their children’s chances of meeting minimum acceptable diet requirements by 17% (ATE [95% empirical bootstrap CI]: 1.17 [1.01, 1.34]). This study is among the first to explore the causal link between mother’s receiving complete continuum of care and minimum acceptable diet intake of children using multilevel data. The findings should support policymakers in making informed decisions to improve child nutrition by ensuring comprehensive maternal care. Sensitivity analysis ensures that the observed effect estimate is robust to unmeasured confounding.",
+		"container-title": "PLOS One",
+		"DOI": "10.1371/journal.pone.0335972",
+		"ISSN": "1932-6203",
+		"issue": "11",
+		"journalAbbreviation": "PLoS One",
+		"language": "en",
+		"page": "e0335972",
+		"source": "DOI.org (Crossref)",
+		"title": "Investigating the causal effect of maternal continuum of care on child’s minimum acceptable diet: A multilevel approach using partially pooled propensity score weighting",
+		"title-short": "Investigating the causal effect of maternal continuum of care on child’s minimum acceptable diet",
+		"URL": "https://dx.plos.org/10.1371/journal.pone.0335972",
+		"volume": "20",
+		"author": [
+			{
+				"family": "Shafee",
+				"given": "Shafayet Khan"
+			},
+			{
+				"family": "Sium",
+				"given": "Md. Niamul Islam"
+			},
+			{
+				"family": "Sarker",
+				"given": "Bishal"
+			},
+			{
+				"family": "Islam",
+				"given": "Riyadul"
+			}
+		],
+		"editor": [
+			{
+				"family": "Tabana",
+				"given": "Hanani"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2025",
+					11,
+					17
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2025",
+					11,
+					10
+				]
+			]
+		}
+	}
+]

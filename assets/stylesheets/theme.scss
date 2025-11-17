@@ -41,3 +41,45 @@ body.quarto-dark #quarto-search .aa-SubmitIcon,
 .quarto-dark #quarto-search .aa-SubmitIcon {
   fill: $foreground !important;
 }
+
+
+/* Light mode hamburger icon (dark strokes) */
+body.quarto-light .navbar-toggler-icon {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(33, 37, 41)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Dark mode hamburger icon (white strokes) */
+body.quarto-dark .navbar-toggler-icon {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255,255,255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+
+// ─────────────────────────────────────────────────────────────
+//  STYLES FOR PUBLICATIONS
+// ─────────────────────────────────────────────────────────────
+
+.pub-button {
+    border: 1px solid var(--bs-primary);
+    border-radius: 5px;
+    padding: 2px 6px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    color: var(--bs-primary);
+    margin-right: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 0.8em;
+}
+
+.pub-button:hover {
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+}
+
+.pub-button i {
+    margin-right: 5px;
+    font-size: 2em;
+}
+

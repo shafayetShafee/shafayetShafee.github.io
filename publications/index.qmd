@@ -1,0 +1,37 @@
+---
+title: "Publications"
+jupyter: python3
+execute:
+  freeze: auto
+---
+
+Below is a full list of my published works, including links to open PDFs, associated 
+datasets, code and software, where applicable. 
+
+```{python}
+# | output: true
+# | echo: false
+
+import dominate.tags as tags
+from parse_publications import make_pub, KEYS_BY_YEAR
+from IPython.display import HTML
+
+elements = []
+for year in sorted(KEYS_BY_YEAR.keys(), reverse=True):
+    keys = KEYS_BY_YEAR[year]
+    elements.append(tags.h2(year))
+    ul = tags.ul()
+    for key in keys:
+        try:
+            ul += tags.li(make_pub(key))
+        except AssertionError:
+            print(key)
+    elements.append(ul)
+
+
+html = "\n".join([e.render() for e in elements])
+
+HTML(html)
+
+```
+
