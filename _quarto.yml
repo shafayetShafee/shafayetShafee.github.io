@@ -17,6 +17,7 @@ website:
   repo-link-target: "_blank"
   open-graph: true
   twitter-card: true
+  back-to-top-navigation: true
   page-footer:
     border: true
     left: |
@@ -58,6 +59,7 @@ website:
         
 format:
   html:
+    smooth-scroll: true
     theme:
       light: 
         - cosmo
@@ -69,7 +71,6 @@ format:
         - assets/stylesheets/theme.scss
     page-layout: full
     anchor-sections: true
-    respect-user-color-scheme: true
     email-obfuscation: javascript
     link-external-newwindow: true
     css:

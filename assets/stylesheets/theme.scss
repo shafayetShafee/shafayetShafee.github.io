@@ -284,3 +284,12 @@ body.quarto-dark .navbar-toggler-icon {
   }
 }
 
+
+.about-body {
+  margin-top: 0rem !important;
+  
+  > .highlight {
+    margin-bottom: 4rem;
+  }
+}
+

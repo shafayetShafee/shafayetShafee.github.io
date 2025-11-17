@@ -1,7 +1,7 @@
 ---
 title: "Shafayet Khan Shafee"
 subtitle: |
-  Statistician, autodidact, and bibliophile.
+  Statistician, Autodidact, and Bibliophile.
 image: assets/images/bw_propic_crop.jpeg
 format:
   html:
@@ -50,10 +50,15 @@ about:
 
 ::: {.about-body}
 
+
+::: {.highlight}
+
 I'm a **Data scientist** and **Statistician** who enjoys using statistical thinking to shape 
 real product and business decisions. My interests and expertise lie at the intersection of 
 applied statistics, machine learning, and open-source development, turning rigorous analytical 
 ideas into practical tools, software and workflows.
+
+:::
 
 
 ## {{< iconify streamline-freehand:office-work-wireless >}} What I Do
@@ -74,7 +79,7 @@ extensions, and I'm always looking for ways to improve the tools I rely on. **R*
 {{< iconify ic:round-rocket-launch >}}{{< iconify ic:round-rocket-launch >}}!!
 
 
-## {{< iconify clarity:briefcase-line >}} Work Experience {.education}
+## {{< iconify clarity:briefcase-line >}} Work Experience 
 
 - **Data Scientist I** @ [Pathao Ltd.](https://pathao.com/?lang=en) <br>
   *Jan, 2025 - Present* <br>
@@ -83,6 +88,48 @@ extensions, and I'm always looking for ways to improve the tools I rely on. **R*
 - **Graduate Data Scientist** @ [Pathao Ltd.](https://pathao.com/?lang=en) <br>
   *July, 2023 - Dec, 2024* <br>
   Dhaka, Bangladesh
+  
+  
+## {{< iconify fluent:window-dev-tools-20-regular >}} Technical Skills
+
+Built on a strong foundation in statistical methodologies, ranging from probability theory, 
+statistical inference, and hypothesis testing to survival analysis, multilevel modeling, 
+Bayesian methods, and causal inference, I work across the broader landscape of modern data 
+science and software development. I build end-to-end data transformation pipelines using 
+tools like [**dbt**](https://docs.getdbt.com/docs/introduction), bash scripting, manage 
+**CI/CD** workflows with *GitHub Actions*, and develop automated reporting dashboards in 
+*Google Sheets* using [**Google AppsScript**](https://developers.google.com/apps-script) 
+and **BigQuery**, as well as dynamic dashboards in *Looker Studio*.
+
+My experience includes developing and productionizing machine-learning models and pipelines 
+with [**Kedro**](https://kedro.org/#why-kedro), [**MLflow**](https://mlflow.org/docs/latest/), 
+and containerized deployments using [**Docker**](https://www.docker.com/). I support polyglot 
+data-science workflows with deep expertise in R complemented by effective integration of Python 
+when needed.
+
+
+## {{< iconify raphael:opensource >}} Open Source Contributions
+
+I contribute to open-source projects across R, Python, and the [Quarto](https://quarto.org/) 
+ecosystem. My work includes developing {{< iconify fa7-brands:r-project title="R" label="R" >}}&nbsp;packages
+such as [**MOR**](https://shafayetshafee.github.io/MOR/) and 
+[**skmisc**](https://shafayetshafee.github.io/skmisc/), as well as 
+{{< iconify carbon:logo-python title="Python" label="Python" >}}&nbsp;packages like 
+[**skmiscpy**](https://skmiscpy.readthedocs.io/en/latest/) for causal effect estimation and 
+[**kedrogen**](https://github.com/shafayetShafee/kedrogen), a CLI tool for scaffolding 
+reproducible Kedro project structures. I have also developed a range of Quarto extensions 
+(e.g., [*downloadthis*](https://github.com/shafayetShafee/downloadthis), 
+[*line-highlight*](https://github.com/shafayetShafee/line-highlight), and 
+[*interactive-sql*](https://github.com/shafayetShafee/interactive-sql)), using Lua, HTML/CSS, 
+and JavaScript to support more efficient and user-friendly scientific publishing workflows.
+
+
+## {{< iconify simple-icons:researchgate >}} Research & Publications
+
+I have [**one**](publications/index.qmd) peer-reviewed publication in **PLoS ONE** (a Q1 journal), 
+where I examined the *causal impact of maternal continuum of care on a child’s minimum acceptable 
+diet in Bangladesh*.
+
 
 ## {{< iconify qlementine-icons:education-24 >}} Education {.education}
 
@@ -93,5 +140,19 @@ extensions, and I'm always looking for ways to improve the tools I rely on. **R*
 - **_B.Sc._ in Applied Statistics**, **2021** <br>
   Grade: _**3.96** out of 4.00_ <br>
   ISRT, University of Dhaka, Bangladesh
+
+
+## {{< iconify material-symbols:interests >}} Interests {.interests}
+
+- Causal Inference
+- Experimentation
+- Hierarchical Modeling
+- Bayesian Inference
+- Predictive Modeling
+- Time Series Forecasting
+- Reproducible Research
+- Open Source Contributions
+- R & Python Pkg Development
+- Data Visualisation & Storytelling
 
 :::
