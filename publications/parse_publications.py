@@ -111,6 +111,7 @@ def make_pub(key: str) -> tags.dom_tag:
     author_tags = [dom_text(a) if a != NAME else tags.strong(a) for a in authors_fmt]
 
     pub = cast(tags.dom_tag, tags.p())
+
     for i, t in enumerate(author_tags):
         pub.add(t)
         if i == len(author_tags) - 1:
@@ -120,19 +121,41 @@ def make_pub(key: str) -> tags.dom_tag:
 
     pub.add(
         tags.span(
-            json_entry["title"], style="color: var(--bs-primary); font-weight: bold;"
+            json_entry["title"],
+            style="color: var(--bs-primary); font-weight: bold;"
         )
     )
-
     pub.add("; ")
-    pub.add(tags.i(get_title(json_entry)))
+
+    journal = get_title(json_entry)
+    pub.add(tags.i(journal))
+
+    volume = json_entry.get("volume")
+    issue = json_entry.get("issue")
+    pages = json_entry.get("page") or json_entry.get("pages")
+
+    parts = []
+
+    if volume:
+        if issue:
+            parts.append(f"{volume}({issue})")
+        else:
+            parts.append(f"{volume}")
+
+    if pages:
+        parts.append(f": {pages}")
+
+    if parts:
+        pub.add(" ")
+        pub.add(" ".join(parts))
+
     pub.add(tags.br())
 
-    # add default DOI button
-    doi = json_entry["DOI"]
-    doi_link = f"https://doi.org/{doi}"
-    btn = make_button("DOI", doi_link)
-    pub.add(btn)
+    doi = json_entry.get("DOI")
+    if doi:
+        doi_link = f"https://doi.org/{doi}"
+        btn = make_button("DOI", doi_link)
+        pub.add(btn)
 
     links = LINK_DATA.get(key, [])
     for link in links:
@@ -140,6 +163,7 @@ def make_pub(key: str) -> tags.dom_tag:
         pub.add(btn)
 
     return pub
+
 
 
 # %%
