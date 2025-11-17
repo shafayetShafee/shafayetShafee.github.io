@@ -1,9 +1,29 @@
+# Rstudio files
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
 
+# Quarto web files
 /.quarto/
 **/*.quarto_ipynb
-
 /_site/
+
+# IDE and Editor Files
+.idea
+.DS_Store
+
+# Python Executables
+python
+
+# uv cache dir
+uv-cache
+
+# Virtual Environment Files
+venv
+
+# Environment Configuration Files
+.env*
+
+# Python Cache Files
+__pycache__
