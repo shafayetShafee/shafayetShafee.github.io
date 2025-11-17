@@ -2,7 +2,7 @@
 title: "Publications"
 jupyter: python3
 execute:
-  freeze: auto
+  freeze: false
 ---
 
 Below is a full list of my published works, including links to open PDFs, associated 
