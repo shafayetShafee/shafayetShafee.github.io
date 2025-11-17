@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://shafayetshafee.github.io/about.html</loc>
-    <lastmod>2025-11-16T16:37:10.428Z</lastmod>
-  </url>
-  <url>
-    <loc>https://shafayetshafee.github.io/posts/welcome/index.html</loc>
-    <lastmod>2025-11-16T16:37:10.451Z</lastmod>
-  </url>
-  <url>
-    <loc>https://shafayetshafee.github.io/LICENSE.html</loc>
-    <lastmod>2025-11-16T18:44:23.523Z</lastmod>
+    <loc>https://shafayetshafee.github.io/publications/index.html</loc>
+    <lastmod>2025-11-17T11:02:56.234Z</lastmod>
   </url>
   <url>
     <loc>https://shafayetshafee.github.io/posts/post-with-code/index.html</loc>
     <lastmod>2025-11-16T16:37:10.450Z</lastmod>
   </url>
   <url>
+    <loc>https://shafayetshafee.github.io/about.html</loc>
+    <lastmod>2025-11-16T16:37:10.428Z</lastmod>
+  </url>
+  <url>
     <loc>https://shafayetshafee.github.io/index.html</loc>
     <lastmod>2025-11-16T20:22:17.812Z</lastmod>
+  </url>
+  <url>
+    <loc>https://shafayetshafee.github.io/posts/welcome/index.html</loc>
+    <lastmod>2025-11-16T16:37:10.451Z</lastmod>
   </url>
 </urlset>
