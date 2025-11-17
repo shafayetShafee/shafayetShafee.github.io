@@ -23,6 +23,10 @@ p:empty {
   font-weight: 500;
 }
 
+body>header#title-block-header {
+  margin-bottom: 0rem;
+}
+
 // ─────────────────────────────────────────────────────────────
 //  COLOR SCHEME TOGGLE – Dimmed for a softer, elegant look
 //  Light mode (sun)  → #555555  (dimmed from #333333)
