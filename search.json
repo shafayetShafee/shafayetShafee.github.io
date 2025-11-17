@@ -4,21 +4,21 @@
     "href": "publications/index.html",
     "title": "Publications",
     "section": "",
-    "text": "Below is a full list of my published works, including links to open PDFs, associated datasets, code and software, where applicable.\n\n\n2025\n\n  \n    \n      S.K. Shafee, M.N.I. Sium, B. Sarker, R. Islam; \n      Investigating the causal effect of maternal continuum of care on child’s minimum acceptable diet: A multilevel approach using partially pooled propensity score weighting; PLOS One 20(11) : e0335972\n      DOI\n      PDF\n      Paper Data\n      Paper Code"
+    "text": "Below is a full list of my published works, including links to open PDFs, associated datasets, code and software, where applicable.\n\n\n2025\n\n  \n    \n      S.K. Shafee, M.N.I. Sium, B. Sarker, R. Islam; \n      Investigating the causal effect of maternal continuum of care on child’s minimum acceptable diet: A multilevel approach using partially pooled propensity score weighting; PLOS One 20(11) : e0335972\n      DOI\n      PDF\n      Paper Data\n      Paper Code\n    \n  \n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "posts/post-with-code/index.html",
     "href": "posts/post-with-code/index.html",
     "title": "Post With Code",
     "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this blog"
+    "text": "About this blog\n\n\n Back to top"
   },
   {
     "objectID": "index.html",
@@ -42,6 +42,27 @@
     "text": "Work Experience\n\nData Scientist I @ Pathao Ltd.  Jan, 2025 - Present  Dhaka, Bangladesh\nGraduate Data Scientist @ Pathao Ltd.  July, 2023 - Dec, 2024  Dhaka, Bangladesh"
   },
   {
+    "objectID": "index.html#technical-skills",
+    "href": "index.html#technical-skills",
+    "title": "Shafayet Khan Shafee",
+    "section": " Technical Skills",
+    "text": "Technical Skills\nBuilt on a strong foundation in statistical methodologies, ranging from probability theory, statistical inference, and hypothesis testing to survival analysis, multilevel modeling, Bayesian methods, and causal inference, I work across the broader landscape of modern data science and software development. I build end-to-end data transformation pipelines using tools like dbt, bash scripting, manage CI/CD workflows with GitHub Actions, and develop automated reporting dashboards in Google Sheets using Google AppsScript and BigQuery, as well as dynamic dashboards in Looker Studio.\nMy experience includes developing and productionizing machine-learning models and pipelines with Kedro, MLflow, and containerized deployments using Docker. I support polyglot data-science workflows with deep expertise in R complemented by effective integration of Python when needed."
+  },
+  {
+    "objectID": "index.html#open-source-contributions",
+    "href": "index.html#open-source-contributions",
+    "title": "Shafayet Khan Shafee",
+    "section": " Open Source Contributions",
+    "text": "Open Source Contributions\nI contribute to open-source projects across R, Python, and the Quarto ecosystem. My work includes developing  packages such as MOR and skmisc, as well as  packages like skmiscpy for causal effect estimation and kedrogen, a CLI tool for scaffolding reproducible Kedro project structures. I have also developed a range of Quarto extensions (e.g., downloadthis, line-highlight, and interactive-sql), using Lua, HTML/CSS, and JavaScript to support more efficient and user-friendly scientific publishing workflows."
+  },
+  {
+    "objectID": "index.html#research-publications",
+    "href": "index.html#research-publications",
+    "title": "Shafayet Khan Shafee",
+    "section": " Research & Publications",
+    "text": "Research & Publications\nI have one peer-reviewed publication in PLoS ONE (a Q1 journal), where I examined the causal impact of maternal continuum of care on a child’s minimum acceptable diet in Bangladesh."
+  },
+  {
     "objectID": "index.html#education",
     "href": "index.html#education",
     "title": "Shafayet Khan Shafee",
@@ -49,10 +70,17 @@
     "text": "Education\n\nM.Sc. in Applied Statistics, 2023  Grade: 3.97 out of 4.00  ISRT, University of Dhaka, Bangladesh\nB.Sc. in Applied Statistics, 2021  Grade: 3.96 out of 4.00  ISRT, University of Dhaka, Bangladesh"
   },
   {
+    "objectID": "index.html#interests",
+    "href": "index.html#interests",
+    "title": "Shafayet Khan Shafee",
+    "section": " Interests",
+    "text": "Interests\n\nCausal Inference\nExperimentation\nHierarchical Modeling\nBayesian Inference\nPredictive Modeling\nTime Series Forecasting\nReproducible Research\nOpen Source Contributions\nR & Python Pkg Development\nData Visualisation & Storytelling"
+  },
+  {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Welcome To My Blog",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts.\n\n\n\n Back to top"
   }
 ]

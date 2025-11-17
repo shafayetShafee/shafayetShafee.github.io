@@ -42,9 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c2bab799d8e1eaa3b0a675c30e00204d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-8b2bf63b5075474f85993bc0d33ceb32.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-c2bab799d8e1eaa3b0a675c30e00204d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-7dc1429f4d1f578ac4284d62970521a3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-3eff547fbf90735541d6ac5fe954472e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-7dc1429f4d1f578ac4284d62970521a3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -72,16 +72,17 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <meta property="og:title" content="Shafayet Khan Shafee – SKS">
-<meta property="og:description" content="Statistician, autodidact, and bibliophile.">
+<meta property="og:description" content="Statistician, Autodidact, and Bibliophile.">
 <meta property="og:image" content="https://shafayetshafee.github.io/assets/images/bw_propic_crop.jpeg">
 <meta property="og:site_name" content="SKS">
 <meta name="twitter:title" content="Shafayet Khan Shafee – SKS">
-<meta name="twitter:description" content="Statistician, autodidact, and bibliophile.">
+<meta name="twitter:description" content="Statistician, Autodidact, and Bibliophile.">
 <meta name="twitter:image" content="https://shafayetshafee.github.io/assets/images/bw_propic_crop.jpeg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -229,8 +230,7 @@ ul.task-list li input[type="checkbox"] {
       }
     };
     const authorPrefersDark = false;
-    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkModeDefault = queryPrefersDark.matches;
+    const darkModeDefault = authorPrefersDark;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -243,14 +243,6 @@ ul.task-list li input[type="checkbox"] {
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
-    queryPrefersDark.addEventListener("change", e => {
-      if(window.localStorage.getItem("quarto-color-scheme") !== null)
-        return;
-      const alternate = e.matches
-      toggleColorMode(alternate);
-      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
-      toggleGiscusIfUsed(alternate, darkModeDefault);
-    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -339,7 +331,7 @@ ul.task-list li input[type="checkbox"] {
       <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Shafayet Khan Shafee</h1>
-<p class="subtitle lead"></p><p>Statistician, autodidact, and bibliophile.</p><p></p>
+<p class="subtitle lead"></p><p>Statistician, Autodidact, and Bibliophile.</p><p></p>
 </div>
 <div class="quarto-title-meta column-page">
   </div>
@@ -384,18 +376,33 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 <div class="about-body">
+<div class="highlight">
 <p>I’m a <strong>Data scientist</strong> and <strong>Statistician</strong> who enjoys using statistical thinking to shape real product and business decisions. My interests and expertise lie at the intersection of applied statistics, machine learning, and open-source development, turning rigorous analytical ideas into practical tools, software and workflows.</p>
+</div>
 <section id="what-i-do" class="level2">
 <h2 data-anchor-id="what-i-do"><iconify-icon role="img" inline="" icon="streamline-freehand:office-work-wireless" aria-label="Icon office-work-wireless from streamline-freehand Iconify.design set." title="Icon office-work-wireless from streamline-freehand Iconify.design set."></iconify-icon> What I Do</h2>
 <p>I translate complex data problems into clear, actionable insights. My work spans machine learning, causal inference, and experimentation, and I spend a lot of time designing experiments and developing scalable data workflows.</p>
 <p>Lately, I’ve been digging deeper into methods at the intersection of <em>causal inference</em> and <em>hierarchical modeling</em>, as well as modern causal ML approaches like metalearners, double machine learning, and causal forests. I’m also very enthusiastic about OSS development: I have developed a few <iconify-icon role="img" inline="" icon="fa7-brands:r-project" aria-label="R" title="R"></iconify-icon>&nbsp;packages, <iconify-icon role="img" inline="" icon="carbon:logo-python" aria-label="Python" title="Python"></iconify-icon>&nbsp;packages, and Quarto extensions, and I’m always looking for ways to improve the tools I rely on. <strong>R</strong> is my first love <iconify-icon role="img" inline="" icon="octicon:heart-fill-16" aria-label="Love" title="Love"></iconify-icon>, but I also work comfortably with <strong>Python</strong> &amp; <strong>SQL</strong> <iconify-icon role="img" inline="" icon="mingcute:fire-fill" aria-label="Icon fire-fill from mingcute Iconify.design set." title="Icon fire-fill from mingcute Iconify.design set."></iconify-icon>, and I’m currently exploring <strong>Rust</strong> and <strong>Julia</strong> to broaden my toolkit, mostly because they’re fast <iconify-icon role="img" inline="" icon="ic:round-rocket-launch" aria-label="Icon round-rocket-launch from ic Iconify.design set." title="Icon round-rocket-launch from ic Iconify.design set."></iconify-icon><iconify-icon role="img" inline="" icon="ic:round-rocket-launch" aria-label="Icon round-rocket-launch from ic Iconify.design set." title="Icon round-rocket-launch from ic Iconify.design set."></iconify-icon>!!</p>
 </section>
-<section id="work-experience" class="level2 education">
-<h2 class="education" data-anchor-id="work-experience"><iconify-icon role="img" inline="" icon="clarity:briefcase-line" aria-label="Icon briefcase-line from clarity Iconify.design set." title="Icon briefcase-line from clarity Iconify.design set."></iconify-icon> Work Experience</h2>
+<section id="work-experience" class="level2">
+<h2 data-anchor-id="work-experience"><iconify-icon role="img" inline="" icon="clarity:briefcase-line" aria-label="Icon briefcase-line from clarity Iconify.design set." title="Icon briefcase-line from clarity Iconify.design set."></iconify-icon> Work Experience</h2>
 <ul>
 <li><p><strong>Data Scientist I</strong> @ <a href="https://pathao.com/?lang=en">Pathao Ltd.</a> <br> <em>Jan, 2025 - Present</em> <br> Dhaka, Bangladesh</p></li>
 <li><p><strong>Graduate Data Scientist</strong> @ <a href="https://pathao.com/?lang=en">Pathao Ltd.</a> <br> <em>July, 2023 - Dec, 2024</em> <br> Dhaka, Bangladesh</p></li>
 </ul>
+</section>
+<section id="technical-skills" class="level2">
+<h2 data-anchor-id="technical-skills"><iconify-icon role="img" inline="" icon="fluent:window-dev-tools-20-regular" aria-label="Icon window-dev-tools-20-regular from fluent Iconify.design set." title="Icon window-dev-tools-20-regular from fluent Iconify.design set."></iconify-icon> Technical Skills</h2>
+<p>Built on a strong foundation in statistical methodologies, ranging from probability theory, statistical inference, and hypothesis testing to survival analysis, multilevel modeling, Bayesian methods, and causal inference, I work across the broader landscape of modern data science and software development. I build end-to-end data transformation pipelines using tools like <a href="https://docs.getdbt.com/docs/introduction"><strong>dbt</strong></a>, bash scripting, manage <strong>CI/CD</strong> workflows with <em>GitHub Actions</em>, and develop automated reporting dashboards in <em>Google Sheets</em> using <a href="https://developers.google.com/apps-script"><strong>Google AppsScript</strong></a> and <strong>BigQuery</strong>, as well as dynamic dashboards in <em>Looker Studio</em>.</p>
+<p>My experience includes developing and productionizing machine-learning models and pipelines with <a href="https://kedro.org/#why-kedro"><strong>Kedro</strong></a>, <a href="https://mlflow.org/docs/latest/"><strong>MLflow</strong></a>, and containerized deployments using <a href="https://www.docker.com/"><strong>Docker</strong></a>. I support polyglot data-science workflows with deep expertise in R complemented by effective integration of Python when needed.</p>
+</section>
+<section id="open-source-contributions" class="level2">
+<h2 data-anchor-id="open-source-contributions"><iconify-icon role="img" inline="" icon="raphael:opensource" aria-label="Icon opensource from raphael Iconify.design set." title="Icon opensource from raphael Iconify.design set."></iconify-icon> Open Source Contributions</h2>
+<p>I contribute to open-source projects across R, Python, and the <a href="https://quarto.org/">Quarto</a> ecosystem. My work includes developing <iconify-icon role="img" inline="" icon="fa7-brands:r-project" aria-label="R" title="R"></iconify-icon>&nbsp;packages such as <a href="https://shafayetshafee.github.io/MOR/"><strong>MOR</strong></a> and <a href="https://shafayetshafee.github.io/skmisc/"><strong>skmisc</strong></a>, as well as <iconify-icon role="img" inline="" icon="carbon:logo-python" aria-label="Python" title="Python"></iconify-icon>&nbsp;packages like <a href="https://skmiscpy.readthedocs.io/en/latest/"><strong>skmiscpy</strong></a> for causal effect estimation and <a href="https://github.com/shafayetShafee/kedrogen"><strong>kedrogen</strong></a>, a CLI tool for scaffolding reproducible Kedro project structures. I have also developed a range of Quarto extensions (e.g., <a href="https://github.com/shafayetShafee/downloadthis"><em>downloadthis</em></a>, <a href="https://github.com/shafayetShafee/line-highlight"><em>line-highlight</em></a>, and <a href="https://github.com/shafayetShafee/interactive-sql"><em>interactive-sql</em></a>), using Lua, HTML/CSS, and JavaScript to support more efficient and user-friendly scientific publishing workflows.</p>
+</section>
+<section id="research-publications" class="level2">
+<h2 data-anchor-id="research-publications"><iconify-icon role="img" inline="" icon="simple-icons:researchgate" aria-label="Icon researchgate from simple-icons Iconify.design set." title="Icon researchgate from simple-icons Iconify.design set."></iconify-icon> Research &amp; Publications</h2>
+<p>I have <a href="./publications/index.html"><strong>one</strong></a> peer-reviewed publication in <strong>PLoS ONE</strong> (a Q1 journal), where I examined the <em>causal impact of maternal continuum of care on a child’s minimum acceptable diet in Bangladesh</em>.</p>
 </section>
 <section id="education" class="level2 education">
 <h2 class="education" data-anchor-id="education"><iconify-icon role="img" inline="" icon="qlementine-icons:education-24" aria-label="Icon education-24 from qlementine-icons Iconify.design set." title="Icon education-24 from qlementine-icons Iconify.design set."></iconify-icon> Education</h2>
@@ -404,12 +411,27 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong><em>B.Sc.</em> in Applied Statistics</strong>, <strong>2021</strong> <br> Grade: <em><strong>3.96</strong> out of 4.00</em> <br> ISRT, University of Dhaka, Bangladesh</p></li>
 </ul>
 </section>
+<section id="interests" class="level2 interests">
+<h2 class="interests" data-anchor-id="interests"><iconify-icon role="img" inline="" icon="material-symbols:interests" aria-label="Icon interests from material-symbols Iconify.design set." title="Icon interests from material-symbols Iconify.design set."></iconify-icon> Interests</h2>
+<ul>
+<li>Causal Inference</li>
+<li>Experimentation</li>
+<li>Hierarchical Modeling</li>
+<li>Bayesian Inference</li>
+<li>Predictive Modeling</li>
+<li>Time Series Forecasting</li>
+<li>Reproducible Research</li>
+<li>Open Source Contributions</li>
+<li>R &amp; Python Pkg Development</li>
+<li>Data Visualisation &amp; Storytelling</li>
+</ul>
+</section>
 </div>
 
 
 
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -849,4 +871,5 @@ window.document.addEventListener("DOMContentLoaded", () => {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
