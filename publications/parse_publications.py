@@ -1,5 +1,6 @@
 """
 Copied from: https://github.com/Jhsmit/website_quarto/blob/master/publications/parse_publications.py
+and then modified & extended accordingly!!
 
 Instructions:
 =============
