@@ -30,14 +30,15 @@ from bibtexparser.customization import convert_to_unicode
 
 # How your name appears — used to bold your name in author lists
 MY_NAME_FAMILY = "Shafee"
-MY_NAME_GIVEN  = "Shafayet Khan"
+MY_NAME_GIVEN = "Shafayet Khan"
 
-bib_path            = "publications.bib"
-yaml_links_path     = "pubs_additional_links.yml"
+bib_path = "publications.bib"
+yaml_links_path = "pubs_additional_links.yml"
 
 # ---------------------------------------------------------------------------
 # Load data
 # ---------------------------------------------------------------------------
+
 
 def _load_bib(path: str) -> dict[str, dict]:
     parser = BibTexParser(common_strings=True)
@@ -54,7 +55,7 @@ def _load_yaml(path: str) -> dict:
     return yaml.safe_load(p.read_text()) or {}
 
 
-PUB_DATA  = _load_bib(bib_path)
+PUB_DATA = _load_bib(bib_path)
 LINK_DATA = _load_yaml(yaml_links_path)
 
 KEYS_BY_YEAR: dict[str, list[str]] = defaultdict(list)
@@ -66,6 +67,7 @@ for _key, _entry in PUB_DATA.items():
 # Name helpers
 # ---------------------------------------------------------------------------
 
+
 def _parse_author_field(raw: str) -> list[dict]:
     """
     Split a BibTeX author field into a list of {'family': ..., 'given': ...}.
@@ -73,8 +75,9 @@ def _parse_author_field(raw: str) -> list[dict]:
     Normalises AND / And / and before splitting.
     """
     import re
+
     # Normalise all variants of ' AND ' (case-insensitive) to ' and '
-    normalised = re.sub(r'\s+[Aa][Nn][Dd]\s+', ' and ', raw)
+    normalised = re.sub(r"\s+[Aa][Nn][Dd]\s+", " and ", raw)
 
     authors = []
     for part in normalised.split(" and "):
@@ -109,9 +112,11 @@ def _is_me(name: dict) -> bool:
         and MY_NAME_GIVEN.split()[0].lower() in name.get("given", "").lower()
     )
 
+
 # ---------------------------------------------------------------------------
 # Button helper
 # ---------------------------------------------------------------------------
+
 
 def _make_button(text: str, link: str, icon: str = "ai ai-doi") -> tags.dom_tag:
     btn = cast(tags.dom_tag, tags.a(href=link, _class="pub-button", target="_blank"))
@@ -120,9 +125,11 @@ def _make_button(text: str, link: str, icon: str = "ai ai-doi") -> tags.dom_tag:
         dom_text(" " + text)
     return btn
 
+
 # ---------------------------------------------------------------------------
 # APA field extractors
 # ---------------------------------------------------------------------------
+
 
 def _get_year(entry: dict) -> str:
     return entry.get("year", "n.d.")
@@ -130,17 +137,14 @@ def _get_year(entry: dict) -> str:
 
 def _get_journal(entry: dict) -> str:
     return (
-        entry.get("journal")
-        or entry.get("booktitle")
-        or entry.get("publisher")
-        or ""
+        entry.get("journal") or entry.get("booktitle") or entry.get("publisher") or ""
     )
 
 
 def _get_volume_issue_pages(entry: dict) -> str:
     volume = entry.get("volume", "")
     number = entry.get("number", "")
-    pages  = entry.get("pages", "").replace("--", "–")
+    pages = entry.get("pages", "").replace("--", "–")
 
     parts = []
     if volume:
@@ -168,9 +172,11 @@ def _get_doi(entry: dict) -> str | None:
 def _get_url(entry: dict) -> str | None:
     return entry.get("url") or entry.get("URL") or None
 
+
 # ---------------------------------------------------------------------------
 # Core pub renderer
 # ---------------------------------------------------------------------------
+
 
 def make_pub(key: str) -> tags.dom_tag:
     """
@@ -210,10 +216,10 @@ def make_pub(key: str) -> tags.dom_tag:
     pub.add(tags.span(title + ". ", style="color: var(--bs-primary);"))
     #  font-weight: bold;
 
-    arxiv_id    = _get_arxiv_id(entry)
+    arxiv_id = _get_arxiv_id(entry)
     arxiv_class = _get_arxiv_primary_class(entry)
-    doi         = _get_doi(entry)
-    url         = _get_url(entry)
+    doi = _get_doi(entry)
+    url = _get_url(entry)
 
     # ---- Source / journal block --------------------------------------
     if entrytype in ("article", "incollection", "inproceedings"):
@@ -238,7 +244,11 @@ def make_pub(key: str) -> tags.dom_tag:
     if doi:
         pub.add(_make_button("DOI", f"https://doi.org/{doi}", icon="ai ai-doi"))
     elif arxiv_id:
-        pub.add(_make_button("arXiv", f"https://arxiv.org/abs/{arxiv_id}", icon="ai ai-arxiv"))
+        pub.add(
+            _make_button(
+                "arXiv", f"https://arxiv.org/abs/{arxiv_id}", icon="ai ai-arxiv"
+            )
+        )
 
     for link_item in LINK_DATA.get(key, []):
         pub.add(_make_button(**link_item))

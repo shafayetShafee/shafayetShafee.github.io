@@ -81,6 +81,7 @@
 [1mrfc3986-validator[0m==0.1.1
 [1mrfc3987-syntax[0m==1.1.0
 [1mrpds-py[0m==0.29.0
+[1mruff[0m==0.15.16
 [1msend2trash[0m==1.8.3
 [1msetuptools[0m==80.9.0
 [1msix[0m==1.17.0
