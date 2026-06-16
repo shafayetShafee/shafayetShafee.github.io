@@ -7,12 +7,11 @@ execute:
 
 :::{.publications}
 
-Below is a full list of my published works, including links to open PDFs, associated 
-datasets, code and software, where applicable. 
+Below is a full list of my peer-reviewed publications and preprints, including links to open PDFs, associated datasets, code, and software where applicable.
 
 ```{python}
-# | output: true
-# | echo: false
+#| output: true
+#| echo: false
 
 import dominate.tags as tags
 from parse_publications import make_pub, KEYS_BY_YEAR
@@ -24,17 +23,11 @@ for year in sorted(KEYS_BY_YEAR.keys(), reverse=True):
     elements.append(tags.h2(year))
     ul = tags.ul()
     for key in keys:
-        try:
-            ul += tags.li(make_pub(key))
-        except AssertionError:
-            print(key)
+        ul += tags.li(make_pub(key))
     elements.append(ul)
 
-
 html = "\n".join([e.render() for e in elements])
-
 HTML(html)
-
 ```
 
 :::

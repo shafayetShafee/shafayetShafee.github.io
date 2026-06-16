@@ -1,179 +1,246 @@
 """
-Copied from: https://github.com/Jhsmit/website_quarto/blob/master/publications/parse_publications.py
-and then modified & extended accordingly!!
+Parse publications from a BibTeX file to APA-style HTML.
 
 Instructions:
 =============
-Parse publications to HTML
+1. Export your publications as a .bib file (from Zotero, Mendeley, or hand-written).
+2. Set `bib_path` to your .bib file path.
+3. Add additional links (PDF, datasets, code, etc.) in `pubs_additional_links.yml`.
+   Keys in the YAML must match the BibTeX entry key exactly
+   (e.g. `shafee2025investigating`, `shafee2026estimationmedianoddsratio`).
+4. Use a python code block in your index.qmd to render the HTML.
 
-How to use:
-1. Export your publications from zotero as JSON CSL file
-2. Adapt `NAME` and json path to your needs
-3. If you want to add additional links (PDF, datasets, code, etc), add them in a yaml file (adjust `yaml_links_path`).
-   The keys in the yaml file should match `citekey(entry)` of the publication.
-4. Use a python code block on your index.qmd file to add the resulting HTML to your web page.
+Dependencies:
+    pip install bibtexparser dominate pyyaml
 """
 
-# %%
 from collections import defaultdict
 from typing import cast
 import dominate.tags as tags
-import json
 import yaml
 from pathlib import Path
 from dominate.util import text as dom_text
+import bibtexparser
+from bibtexparser.bparser import BibTexParser
+from bibtexparser.customization import convert_to_unicode
 
-# %%
-NAME = "S.K. Shafee"
+# ---------------------------------------------------------------------------
+# Configuration
+# ---------------------------------------------------------------------------
 
-almost_name = {"family": "Shafee", "given": "Shafayet Khan"}
-correct_name = {"family": "Shafee", "given": "Shafayet Khan"}
+# How your name appears — used to bold your name in author lists
+MY_NAME_FAMILY = "Shafee"
+MY_NAME_GIVEN  = "Shafayet Khan"
 
-json_path = "Exported Items.json"
-yaml_links_path = "pubs_additional_links.yml"
-json_loaded = json.loads(Path(json_path).read_bytes())
+bib_path            = "publications.bib"
+yaml_links_path     = "pubs_additional_links.yml"
 
+# ---------------------------------------------------------------------------
+# Load data
+# ---------------------------------------------------------------------------
 
-# %%
-
-
-def regen_yaml() -> None:
-    """Regenerate the YAML file with the publication keys."""
-    raise NotImplementedError("file already exists")
-    lines = [p + ": {}" for p in PUB_DATA.keys()]
-    s = "\n".join(lines)
-    Path("pubs_additional_links.yaml").write_text(s)
-
-
-def format_name(name_dict: dict) -> str:
-    initials = "".join([part[0].upper() + "." for part in name_dict["given"].split()])
-    family_name = name_dict["family"]
-    name = initials
-    if particle := name_dict.get("non-dropping-particle"):
-        name += f" {particle}"
-    name += f" {family_name}"
-    return name
+def _load_bib(path: str) -> dict[str, dict]:
+    parser = BibTexParser(common_strings=True)
+    parser.customization = convert_to_unicode
+    with open(path, encoding="utf-8") as f:
+        db = bibtexparser.load(f, parser=parser)
+    return {entry["ID"]: entry for entry in db.entries}
 
 
-def make_button(text: str, link: str, icon="ai ai-doi") -> tags.dom_tag:
+def _load_yaml(path: str) -> dict:
+    p = Path(path)
+    if not p.exists():
+        return {}
+    return yaml.safe_load(p.read_text()) or {}
+
+
+PUB_DATA  = _load_bib(bib_path)
+LINK_DATA = _load_yaml(yaml_links_path)
+
+KEYS_BY_YEAR: dict[str, list[str]] = defaultdict(list)
+for _key, _entry in PUB_DATA.items():
+    _year = _entry.get("year", "n.d.")
+    KEYS_BY_YEAR[_year].append(_key)
+
+# ---------------------------------------------------------------------------
+# Name helpers
+# ---------------------------------------------------------------------------
+
+def _parse_author_field(raw: str) -> list[dict]:
+    """
+    Split a BibTeX author field into a list of {'family': ..., 'given': ...}.
+    Handles both "Family, Given" and "Given Family" forms, and 'and'-separated lists.
+    Normalises AND / And / and before splitting.
+    """
+    import re
+    # Normalise all variants of ' AND ' (case-insensitive) to ' and '
+    normalised = re.sub(r'\s+[Aa][Nn][Dd]\s+', ' and ', raw)
+
+    authors = []
+    for part in normalised.split(" and "):
+        part = part.strip()
+        if not part:
+            continue
+        if "," in part:
+            family, given = part.split(",", 1)
+            authors.append({"family": family.strip(), "given": given.strip()})
+        else:
+            tokens = part.split()
+            if len(tokens) == 1:
+                authors.append({"family": tokens[0], "given": ""})
+            else:
+                authors.append({"family": tokens[-1], "given": " ".join(tokens[:-1])})
+    return authors
+
+
+def _format_name_apa(name: dict) -> str:
+    """Format a name dict as 'Family, I.' (APA style)."""
+    given = name.get("given", "")
+    family = name.get("family", "")
+    if not given:
+        return family
+    initials = " ".join(p[0].upper() + "." for p in given.split() if p)
+    return f"{family}, {initials}"
+
+
+def _is_me(name: dict) -> bool:
+    return (
+        name.get("family", "").lower() == MY_NAME_FAMILY.lower()
+        and MY_NAME_GIVEN.split()[0].lower() in name.get("given", "").lower()
+    )
+
+# ---------------------------------------------------------------------------
+# Button helper
+# ---------------------------------------------------------------------------
+
+def _make_button(text: str, link: str, icon: str = "ai ai-doi") -> tags.dom_tag:
     btn = cast(tags.dom_tag, tags.a(href=link, _class="pub-button", target="_blank"))
     with btn:
         tags.i(_class=icon)
-        dom_text(text)
+        dom_text(" " + text)
     return btn
 
+# ---------------------------------------------------------------------------
+# APA field extractors
+# ---------------------------------------------------------------------------
 
-def citekey(entry: dict) -> str:
-    """Create a citation key from the entry.
+def _get_year(entry: dict) -> str:
+    return entry.get("year", "n.d.")
 
-    with better bibtex not stricly necesary, could also use field "id".
-    """
-    title = (
-        "_".join(entry["title"].split()[:3])
-        .replace("-", "_")
-        .translate({ord(c): None for c in "!@#$;:,"})
-        .lower()
+
+def _get_journal(entry: dict) -> str:
+    return (
+        entry.get("journal")
+        or entry.get("booktitle")
+        or entry.get("publisher")
+        or ""
     )
 
-    parts = [
-        entry["author"][0]["family"].lower(),
-        title,
-        get_year(entry),
-    ]
-    return "_".join(parts)
 
-
-def get_year(entry: dict) -> str:
-    return entry["issued"]["date-parts"][0][0]
-
-
-def get_title(entry: dict) -> str:
-    """Get the journal title from possible keys in the entry.
-
-    Return empty string if not found.
-    """
-    keys = ["container-title", "JournalAbbreviation"]
-    for key in keys:
-        if key in entry:
-            return entry[key]
-    return ""
-
-
-def make_pub(key: str) -> tags.dom_tag:
-    json_entry = PUB_DATA[key]
-
-    # fix incorrect author name
-    authors = [
-        a if json.dumps(a) != json.dumps(almost_name) else correct_name
-        for a in json_entry["author"]
-    ]
-    authors_fmt = [format_name(author) for author in authors]
-    assert NAME in authors_fmt, "Author not found in the list of authors: " + str(key)
-    author_tags = [dom_text(a) if a != NAME else tags.strong(a) for a in authors_fmt]
-
-    pub = cast(tags.dom_tag, tags.p())
-
-    for i, t in enumerate(author_tags):
-        pub.add(t)
-        if i == len(author_tags) - 1:
-            pub.add("; ")
-        else:
-            pub.add(", ")
-
-    pub.add(
-        tags.span(
-            json_entry["title"],
-            style="color: var(--bs-primary); font-weight: bold;"
-        )
-    )
-    pub.add("; ")
-
-    journal = get_title(json_entry)
-    pub.add(tags.i(journal))
-
-    volume = json_entry.get("volume")
-    issue = json_entry.get("issue")
-    pages = json_entry.get("page") or json_entry.get("pages")
+def _get_volume_issue_pages(entry: dict) -> str:
+    volume = entry.get("volume", "")
+    number = entry.get("number", "")
+    pages  = entry.get("pages", "").replace("--", "–")
 
     parts = []
-
     if volume:
-        if issue:
-            parts.append(f"{volume}({issue})")
-        else:
-            parts.append(f"{volume}")
-
+        vi = f"{volume}({number})" if number else volume
+        parts.append(vi)
     if pages:
-        parts.append(f": {pages}")
+        parts.append(f", {pages}")
 
-    if parts:
-        pub.add(" ")
-        pub.add(" ".join(parts))
+    return "".join(parts)
 
+
+def _get_arxiv_id(entry: dict) -> str | None:
+    """Return the arXiv eprint identifier if present."""
+    return entry.get("eprint") or None
+
+
+def _get_arxiv_primary_class(entry: dict) -> str | None:
+    return entry.get("primaryclass") or entry.get("primaryClass") or None
+
+
+def _get_doi(entry: dict) -> str | None:
+    return entry.get("doi") or entry.get("DOI") or None
+
+
+def _get_url(entry: dict) -> str | None:
+    return entry.get("url") or entry.get("URL") or None
+
+# ---------------------------------------------------------------------------
+# Core pub renderer
+# ---------------------------------------------------------------------------
+
+def make_pub(key: str) -> tags.dom_tag:
+    """
+    Render one publication as an APA-style HTML <p> block.
+
+    APA template used:
+        Authors (Year). Title. Journal, volume(issue), pages. DOI/arXiv link.
+    """
+    entry = PUB_DATA[key]
+    entrytype = entry.get("ENTRYTYPE", "article").lower()
+
+    raw_authors = entry.get("author", "")
+    authors = _parse_author_field(raw_authors)
+
+    # ---- Author string ------------------------------------------------
+    author_nodes = []
+    for i, a in enumerate(authors):
+        fmt = _format_name_apa(a)
+        node = tags.strong(fmt) if _is_me(a) else dom_text(fmt)
+        author_nodes.append(node)
+
+    pub = cast(tags.dom_tag, tags.p(_class="pub-entry"))
+
+    # Authors
+    for i, node in enumerate(author_nodes):
+        pub.add(node)
+        if i < len(author_nodes) - 2:
+            pub.add(dom_text(", "))
+        elif i == len(author_nodes) - 2:
+            pub.add(dom_text(", & "))
+
+    year = _get_year(entry)
+    pub.add(dom_text(f" ({year}). "))
+
+    # Title
+    title = entry.get("title", "").strip("{}")
+    pub.add(tags.span(title + ". ", style="color: var(--bs-primary);"))
+    #  font-weight: bold;
+
+    arxiv_id    = _get_arxiv_id(entry)
+    arxiv_class = _get_arxiv_primary_class(entry)
+    doi         = _get_doi(entry)
+    url         = _get_url(entry)
+
+    # ---- Source / journal block --------------------------------------
+    if entrytype in ("article", "incollection", "inproceedings"):
+        journal = _get_journal(entry)
+        if journal:
+            pub.add(tags.i(journal))
+
+        vip = _get_volume_issue_pages(entry)
+        if vip:
+            pub.add(dom_text(f", {vip}"))
+
+        pub.add(dom_text("."))
+
+    elif entrytype == "misc" and arxiv_id:
+        # arXiv preprint — APA 7 style
+        class_str = f" [{arxiv_class.upper()}]" if arxiv_class else ""
+        pub.add(dom_text(f"arXiv:{arxiv_id}{class_str}."))
+
+    # ---- Buttons (DOI / PDF / Data / Code etc.) ----------------------
     pub.add(tags.br())
 
-    doi = json_entry.get("DOI")
     if doi:
-        doi_link = f"https://doi.org/{doi}"
-        btn = make_button("DOI", doi_link)
-        pub.add(btn)
+        pub.add(_make_button("DOI", f"https://doi.org/{doi}", icon="ai ai-doi"))
+    elif arxiv_id:
+        pub.add(_make_button("arXiv", f"https://arxiv.org/abs/{arxiv_id}", icon="ai ai-arxiv"))
 
-    links = LINK_DATA.get(key, [])
-    for link in links:
-        btn = make_button(**link)
-        pub.add(btn)
+    for link_item in LINK_DATA.get(key, []):
+        pub.add(_make_button(**link_item))
 
     return pub
-
-
-
-# %%
-
-PUB_DATA = {citekey(entry): entry for entry in json_loaded}
-LINK_DATA = yaml.safe_load(Path(yaml_links_path).read_text())
-
-
-KEYS_BY_YEAR = defaultdict(list)
-for key, entry in PUB_DATA.items():
-    year = get_year(entry)
-    KEYS_BY_YEAR[year].append(key)
