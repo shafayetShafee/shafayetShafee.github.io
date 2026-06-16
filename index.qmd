@@ -81,8 +81,12 @@ extensions, and I'm always looking for ways to improve the tools I rely on. **R*
 
 ## {{< iconify clarity:briefcase-line >}} Work Experience 
 
-- **Data Scientist I** @ [Pathao Ltd.](https://pathao.com/?lang=en) <br>
-  *Jan, 2025 - Present* <br>
+- **Data Scientist II** @ [Pathao Pay](https://pathaopay.com/?lang=en) <br>
+  *Jan, 2026 - Present* <br>
+  Dhaka, Bangladesh
+
+- **Data Scientist I** @ [Pathao Pay](https://pathaopay.com/?lang=en) <br>
+  *Jan, 2025 - Dec, 2025* <br>
   Dhaka, Bangladesh
 
 - **Graduate Data Scientist** @ [Pathao Ltd.](https://pathao.com/?lang=en) <br>
@@ -126,9 +130,8 @@ and JavaScript to support more efficient and user-friendly scientific publishing
 
 ## {{< iconify simple-icons:researchgate >}} Research & Publications
 
-I have [**one**](publications/index.qmd) peer-reviewed publication in **PLoS ONE** (a Q1 journal), 
-where I examined the *causal impact of maternal continuum of care on a child’s minimum acceptable 
-diet in Bangladesh*.
+I have [**one**](publications/index.qmd) peer-reviewed publication in **PLoS ONE** (a Q1 journal),
+with two additional works currently under review, preprints of which are available on arXiv.
 
 
 ## {{< iconify qlementine-icons:education-24 >}} Education {.education}
