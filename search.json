@@ -4,7 +4,7 @@
     "href": "publications/index.html",
     "title": "Publications",
     "section": "",
-    "text": "Below is a full list of my published works, including links to open PDFs, associated datasets, code and software, where applicable.\n\n\n2025\n\n  \n    \n      S.K. Shafee, M.N.I. Sium, B. Sarker, R. Islam; \n      Investigating the causal effect of maternal continuum of care on child’s minimum acceptable diet: A multilevel approach using partially pooled propensity score weighting; PLOS One 20(11) : e0335972\n      DOI\n      PDF\n      Paper Data\n      Paper Code\n    \n  \n\n\n\n\n\n\n\n Back to top"
+    "text": "Below is a full list of my peer-reviewed publications and preprints, including links to open PDFs, associated datasets, code, and software where applicable.\n\n\n2026\n\n  \n    \n      Shafee, S. K., & Rahman, M. S. (2026). \n      On the estimation of the median odds ratio for measuring contextual effects in multilevel binary data from complex survey designs. arXiv:2606.15145 [STAT.ME].\n       arXiv\n       PDF\n       Paper Data\n       Paper Code\n    \n  \n  \n    \n      Shafee, S. K., Sarker, B., & Sium, M. N. I. (2026). \n      G-computation for causal effect estimation from observational hierarchical data with unmeasured cluster context. arXiv:2606.14131 [STAT.ME].\n       arXiv\n       PDF\n       Paper Data\n       Paper Code\n    \n  \n\n2025\n\n  \n    \n      Shafee, S. K., Sium, M. N. I., Sarker, B., & Islam, R. (2025). \n      Investigating the causal effect of maternal continuum of care on child’s minimum acceptable diet: A multilevel approach using partially pooled propensity score weighting. PLOS ONE, 20(11), 1–13.\n       DOI\n       PDF\n       Paper Data\n       Paper Code\n    \n  \n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -39,7 +39,7 @@
     "href": "index.html#work-experience",
     "title": "Shafayet Khan Shafee",
     "section": " Work Experience",
-    "text": "Work Experience\n\nData Scientist I @ Pathao Ltd.  Jan, 2025 - Present  Dhaka, Bangladesh\nGraduate Data Scientist @ Pathao Ltd.  July, 2023 - Dec, 2024  Dhaka, Bangladesh"
+    "text": "Work Experience\n\nData Scientist II @ Pathao Pay  Jan, 2026 - Present  Dhaka, Bangladesh\nData Scientist I @ Pathao Pay  Jan, 2025 - Dec, 2025  Dhaka, Bangladesh\nGraduate Data Scientist @ Pathao Ltd.  July, 2023 - Dec, 2024  Dhaka, Bangladesh"
   },
   {
     "objectID": "index.html#technical-skills",
@@ -60,7 +60,7 @@
     "href": "index.html#research-publications",
     "title": "Shafayet Khan Shafee",
     "section": " Research & Publications",
-    "text": "Research & Publications\nI have one peer-reviewed publication in PLoS ONE (a Q1 journal), where I examined the causal impact of maternal continuum of care on a child’s minimum acceptable diet in Bangladesh."
+    "text": "Research & Publications\nI have one peer-reviewed publication in PLoS ONE (a Q1 journal), with two additional works currently under review, preprints of which are available on arXiv."
   },
   {
     "objectID": "index.html#education",
