@@ -206,7 +206,8 @@ def make_pub(key: str) -> tags.dom_tag:
         if i < len(author_nodes) - 2:
             pub.add(dom_text(", "))
         elif i == len(author_nodes) - 2:
-            pub.add(dom_text(", & "))
+            # pub.add(dom_text(", & "))
+            pub.add(dom_text(", "))
 
     year = _get_year(entry)
     pub.add(dom_text(f" ({year}). "))

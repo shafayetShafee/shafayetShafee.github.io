@@ -128,12 +128,6 @@ reproducible Kedro project structures. I have also developed a range of Quarto e
 and JavaScript to support more efficient and user-friendly scientific publishing workflows.
 
 
-## {{< iconify simple-icons:researchgate >}} Research & Publications
-
-I have [**one**](publications/index.qmd) peer-reviewed publication in **PLoS ONE** (a Q1 journal),
-with two additional works currently under review, preprints of which are available on arXiv.
-
-
 ## {{< iconify qlementine-icons:education-24 >}} Education {.education}
 
 - **_M.Sc._ in Applied Statistics**, **2023** <br>
@@ -143,6 +137,31 @@ with two additional works currently under review, preprints of which are availab
 - **_B.Sc._ in Applied Statistics**, **2021** <br>
   Grade: _**3.96** out of 4.00_ <br>
   ISRT, University of Dhaka, Bangladesh
+  
+
+## {{< iconify simple-icons:researchgate >}} Research & Publications
+
+I have one peer-reviewed publication in **PLoS ONE** (a Q1 journal), with two 
+additional works currently under review, preprints of which are available on arXiv. 
+[**See details here**](publications/index.qmd)  
+
+  
+## {{< iconify mdi:trophy-award >}} Honors & Awards
+
+- **Dean's Award**, Faculty of Science, University of Dhaka · **2021** <br>
+  Awarded in recognition of academic excellence. <br>
+  ![ ](assets/images/deans-award.jpeg){.lightbox width="120px"}
+
+- **Conference Award for Scientists**, ISCB45 · **2024** <br>
+  Awarded at the 45th Annual Conference of the 
+  [International Society for Clinical Biostatistics](https://iscb.international/) 
+  (ISCB45), Thessaloniki, Greece, July 21–25, 2024, for the abstract titled *"Interval Estimation 
+  of the Median Odds Ratio for Measuring Contextual Effects in Multilevel Data Using a Binary 
+  Logistic Model."*  [[Abstract Book]](https://convin.gr/assets/files/misc/ISCB2024Program_AbstractBook.pdf){target="_blank"}
+
+- **National Science and Technology (NST) Fellowship** · **Oct 2023** <br>
+  Issued by the Ministry of Science and Technology, Government of Bangladesh, for thesis research 
+  on multilevel modeling during M.Sc. at the University of Dhaka.
 
 
 ## {{< iconify material-symbols:interests >}} Interests {.interests}

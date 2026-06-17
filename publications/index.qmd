@@ -2,7 +2,7 @@
 title: "Publications"
 jupyter: python3
 execute:
-  freeze: true
+  freeze: auto
 ---
 
 :::{.publications}
