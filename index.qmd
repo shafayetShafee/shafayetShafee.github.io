@@ -33,10 +33,10 @@ about:
       text: Github
       href: https://github.com/shafayetShafee
       target: "_blank"
-    - text: '{{< iconify ai ai-google-scholar-square ai-3x style="margin-right: 0.15em;" >}} Google Scholar'
+    - text: '{{< iconify academicons:google-scholar size=xl style="margin-right: -0.2em;" >}} Google Scholar'
       href: https://scholar.google.com/citations?user=GSgDEx0AAAAJ&hl=en
       target: "_blank"
-    - text: '{{< iconify academicons:orcid style="margin-right: 0.15em" >}} ORCID'
+    - text: '{{< iconify academicons:orcid style="margin-right: -0.2em" >}} ORCID'
       href: https://orcid.org/0009-0002-8021-3788
       target: "_blank"
     - icon: envelope-at-fill
