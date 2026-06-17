@@ -4,7 +4,7 @@
     "href": "publications/index.html",
     "title": "Publications",
     "section": "",
-    "text": "Below is a full list of my peer-reviewed publications and preprints, including links to open PDFs, associated datasets, code, and software where applicable.\n\n\n2026\n\n  \n    \n      Shafee, S. K., & Rahman, M. S. (2026). \n      On the estimation of the median odds ratio for measuring contextual effects in multilevel binary data from complex survey designs. arXiv:2606.15145 [STAT.ME].\n       arXiv\n       PDF\n       Paper Data\n       Paper Code\n    \n  \n  \n    \n      Shafee, S. K., Sarker, B., & Sium, M. N. I. (2026). \n      G-computation for causal effect estimation from observational hierarchical data with unmeasured cluster context. arXiv:2606.14131 [STAT.ME].\n       arXiv\n       PDF\n       Paper Data\n       Paper Code\n    \n  \n\n2025\n\n  \n    \n      Shafee, S. K., Sium, M. N. I., Sarker, B., & Islam, R. (2025). \n      Investigating the causal effect of maternal continuum of care on child’s minimum acceptable diet: A multilevel approach using partially pooled propensity score weighting. PLOS ONE, 20(11), 1–13.\n       DOI\n       PDF\n       Paper Data\n       Paper Code\n    \n  \n\n\n\n\n\n\n\n Back to top"
+    "text": "Below is a full list of my peer-reviewed publications and preprints, including links to open PDFs, associated datasets, code, and software where applicable.\n\n\n2026\n\n  \n    \n      Shafee, S. K., Rahman, M. S. (2026). \n      On the estimation of the median odds ratio for measuring contextual effects in multilevel binary data from complex survey designs. arXiv:2606.15145 [STAT.ME].\n       arXiv\n       PDF\n       Paper Data\n       Paper Code\n    \n  \n  \n    \n      Shafee, S. K., Sarker, B., Sium, M. N. I. (2026). \n      G-computation for causal effect estimation from observational hierarchical data with unmeasured cluster context. arXiv:2606.14131 [STAT.ME].\n       arXiv\n       PDF\n       Paper Data\n       Paper Code\n    \n  \n\n2025\n\n  \n    \n      Shafee, S. K., Sium, M. N. I., Sarker, B., Islam, R. (2025). \n      Investigating the causal effect of maternal continuum of care on child’s minimum acceptable diet: A multilevel approach using partially pooled propensity score weighting. PLOS ONE, 20(11), 1–13.\n       DOI\n       PDF\n       Paper Data\n       Paper Code\n    \n  \n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -56,18 +56,25 @@
     "text": "Open Source Contributions\nI contribute to open-source projects across R, Python, and the Quarto ecosystem. My work includes developing  packages such as MOR and skmisc, as well as  packages like skmiscpy for causal effect estimation and kedrogen, a CLI tool for scaffolding reproducible Kedro project structures. I have also developed a range of Quarto extensions (e.g., downloadthis, line-highlight, and interactive-sql), using Lua, HTML/CSS, and JavaScript to support more efficient and user-friendly scientific publishing workflows."
   },
   {
-    "objectID": "index.html#research-publications",
-    "href": "index.html#research-publications",
-    "title": "Shafayet Khan Shafee",
-    "section": " Research & Publications",
-    "text": "Research & Publications\nI have one peer-reviewed publication in PLoS ONE (a Q1 journal), with two additional works currently under review, preprints of which are available on arXiv."
-  },
-  {
     "objectID": "index.html#education",
     "href": "index.html#education",
     "title": "Shafayet Khan Shafee",
     "section": " Education",
     "text": "Education\n\nM.Sc. in Applied Statistics, 2023  Grade: 3.97 out of 4.00  ISRT, University of Dhaka, Bangladesh\nB.Sc. in Applied Statistics, 2021  Grade: 3.96 out of 4.00  ISRT, University of Dhaka, Bangladesh"
+  },
+  {
+    "objectID": "index.html#research-publications",
+    "href": "index.html#research-publications",
+    "title": "Shafayet Khan Shafee",
+    "section": " Research & Publications",
+    "text": "Research & Publications\nI have one peer-reviewed publication in PLoS ONE (a Q1 journal), with two additional works currently under review, preprints of which are available on arXiv. See details here"
+  },
+  {
+    "objectID": "index.html#honors-awards",
+    "href": "index.html#honors-awards",
+    "title": "Shafayet Khan Shafee",
+    "section": " Honors & Awards",
+    "text": "Honors & Awards\n\nDean’s Award, Faculty of Science, University of Dhaka · 2021  Awarded in recognition of academic excellence.  \nConference Award for Scientists, ISCB45 · 2024  Awarded at the 45th Annual Conference of the International Society for Clinical Biostatistics (ISCB45), Thessaloniki, Greece, July 21–25, 2024, for the abstract titled “Interval Estimation of the Median Odds Ratio for Measuring Contextual Effects in Multilevel Data Using a Binary Logistic Model.” [Abstract Book]\nNational Science and Technology (NST) Fellowship · Oct 2023  Issued by the Ministry of Science and Technology, Government of Bangladesh, for thesis research on multilevel modeling during M.Sc. at the University of Dhaka."
   },
   {
     "objectID": "index.html#interests",
