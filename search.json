@@ -7,20 +7,6 @@
     "text": "Below is a full list of my peer-reviewed publications and preprints, including links to open PDFs, associated datasets, code, and software where applicable.\n\n\n2026\n\n  \n    \n      Shafee, S. K., Rahman, M. S. (2026). \n      On the estimation of the median odds ratio for measuring contextual effects in multilevel binary data from complex survey designs. arXiv:2606.15145 [STAT.ME].\n       arXiv\n       PDF\n       Paper Data\n       Paper Code\n    \n  \n  \n    \n      Shafee, S. K., Sarker, B., Sium, M. N. I. (2026). \n      G-computation for causal effect estimation from observational hierarchical data with unmeasured cluster context. arXiv:2606.14131 [STAT.ME].\n       arXiv\n       PDF\n       Paper Data\n       Paper Code\n    \n  \n\n2025\n\n  \n    \n      Shafee, S. K., Sium, M. N. I., Sarker, B., Islam, R. (2025). \n      Investigating the causal effect of maternal continuum of care on child’s minimum acceptable diet: A multilevel approach using partially pooled propensity score weighting. PLOS ONE, 20(11), 1–13.\n       DOI\n       PDF\n       Paper Data\n       Paper Code\n    \n  \n\n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog\n\n\n Back to top"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Shafayet Khan Shafee",
@@ -82,12 +68,5 @@
     "title": "Shafayet Khan Shafee",
     "section": " Interests",
     "text": "Interests\n\nCausal Inference\nExperimentation\nHierarchical Modeling\nBayesian Inference\nPredictive Modeling\nTime Series Forecasting\nReproducible Research\nOpen Source Contributions\nR & Python Pkg Development\nData Visualisation & Storytelling"
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts.\n\n\n\n Back to top"
   }
 ]
