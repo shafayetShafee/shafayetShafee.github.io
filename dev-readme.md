@@ -16,6 +16,11 @@ Render everything without serving:
 quarto render
 ```
 
+> [!IMPORTANT]
+> If you want to render any quarto file containing python code, make sure to 
+> to activate the `venv` using `source venv/bin/activate`. Quarto detects this
+> `venv` following from `QUARTO_PYTHON=./venv/bin/python` defined in `_environement.yml`
+
 ## Publishing
 
 ### Full workflow before publishing
