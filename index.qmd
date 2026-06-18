@@ -6,7 +6,7 @@ image: assets/images/bw_propic_crop.jpeg
 format:
   html:
     grid:
-      body-width: 800px
+      body-width: 500px
 about:
   id: hero-banner
   template: solana
@@ -51,32 +51,70 @@ about:
 ::: {.about-body}
 
 
-::: {.highlight}
-
-I'm a **Data scientist** and **Statistician** who enjoys using statistical thinking to shape 
-real product and business decisions. My interests and expertise lie at the intersection of 
-applied statistics, machine learning, and open-source development, turning rigorous analytical 
-ideas into practical tools, software and workflows.
-
-:::
+> I'm a **Data Scientist** and **Statistician** with a focus on applying statistical 
+thinking to real product and business decisions. My interests and expertise lie 
+at the intersection of applied statistics, machine learning, and open-source 
+development &mdash; turning rigorous analytical ideas into practical tools, 
+software, and workflows. ^[All em-dashes are mine!]
 
 
 ## {{< iconify streamline-freehand:office-work-wireless >}} What I Do
 
-I translate complex data problems into clear, actionable insights. My work spans machine 
-learning, causal inference, and experimentation, and I spend a lot of time designing experiments 
-and developing scalable data workflows.
+In my day job, I work as a data scientist, where I spend most of my time building 
+data pipelines and models, designing and analyzing experiments, and applying 
+causal inference and machine learning methods to product and business problems 
+&mdash; things like measuring the impact of product rollouts, estimating 
+heterogeneous treatment effects, and modeling repayment risk.
 
-Lately, I've been digging deeper into methods at the intersection of *causal inference* and
-*hierarchical modeling*, as well as modern causal ML approaches like metalearners, 
-double machine learning, and causal forests. I'm also very enthusiastic about OSS development: 
-I have developed a few {{< iconify fa7-brands:r-project title="R" label="R" >}}&nbsp;packages, 
-{{< iconify carbon:logo-python title="Python" label="Python" >}}&nbsp;packages, and Quarto 
-extensions, and I'm always looking for ways to improve the tools I rely on. **R** is my first love
-{{< iconify octicon:heart-fill-16 title="Love" label="Love" >}}, but I also work comfortably with 
-**Python** & **SQL** {{< iconify mingcute:fire-fill >}}, and I'm currently exploring **Rust** and 
-**Julia** to broaden my toolkit, mostly because they're fast 
-{{< iconify ic:round-rocket-launch >}}{{< iconify ic:round-rocket-launch >}}!!
+Outside of work, I read and explore a fair bit &mdash; mostly around causal 
+inference (IPW, confounding bias, meta-learners, double machine learning, causal 
+forests), Bayesian inference, survival analysis, and lately sensitivity analysis 
+in causal inference. Some of that eventually turns into research; the rest just 
+feeds my curiosity.
+
+I'm also quite enthusiastic about open-source development. I've built a few
+{{< iconify fa7-brands:r-project title="R" label="R" >}}&nbsp;packages, 
+{{< iconify carbon:logo-python title="Python" label="Python" >}}&nbsp;packages,
+and Quarto extensions, and I'm always looking for ways to improve the tools I 
+rely on. **R** is my first love {{< iconify octicon:heart-fill-16 title="Love" label="Love" >}},
+but I also work comfortably with **Python** & **SQL** {{< iconify mingcute:fire-fill >}}. 
+Along the way I also picked up a bit of **Lua** while building 
+[*Quarto extensions*](https://quarto.org/docs/extensions/), and I have a 
+long-standing curiosity about systems languages like **Rust** and high-performance 
+scientific computing languages like **Julia** {{< iconify ic:round-rocket-launch >}}.
+
+
+## {{< iconify simple-icons:researchgate >}} Research & Publications
+
+My published work so far centres on **causal inference** and **hierarchical modeling**, 
+with a focus on developing and applying rigorous statistical methods to complex 
+observational data from public health settings.
+
+::: {.highlight}
+
+I have one peer-reviewed publication in *PLoS ONE* (a Q1 journal) on estimating 
+the causal effect of maternal continuum of care on child nutrition in Bangladesh 
+using multilevel propensity score methods. Two additional works are currently 
+under review &mdash; one on g-computation for causal effect estimation in 
+hierarchical observational data, and one on estimation of the median odds ratio 
+for measuring contextual effects in multilevel binary data &mdash; preprints of 
+both are available on arXiv.
+
+[**See full list of publications &rarr;**](publications/index.qmd)
+
+:::
+
+::: {.interests}
+
+### Research Interests
+
+- Causal Inference
+- Hierarchical Modeling
+- Bayesian Inference
+- Sensitivity Analysis
+- Survival Analysis
+- Conformal Prediction
+:::
 
 
 ## {{< iconify clarity:briefcase-line >}} Work Experience 
@@ -93,73 +131,75 @@ extensions, and I'm always looking for ways to improve the tools I rely on. **R*
   *July, 2023 - Dec, 2024* <br>
   Dhaka, Bangladesh
   
-  
+
 ## {{< iconify fluent:window-dev-tools-20-regular >}} Technical Skills
 
-Built on a strong foundation in statistical methodologies, ranging from probability theory, 
-statistical inference, and hypothesis testing to survival analysis, multilevel modeling, 
-Bayesian methods, and causal inference, I work across the broader landscape of modern data 
-science and software development. I build end-to-end data transformation pipelines using 
-tools like [**dbt**](https://docs.getdbt.com/docs/introduction), bash scripting, manage 
-**CI/CD** workflows with *GitHub Actions*, and develop automated reporting dashboards in 
-*Google Sheets* using [**Google AppsScript**](https://developers.google.com/apps-script) 
-and **BigQuery**, as well as dynamic dashboards in *Looker Studio*.
-
-My experience includes developing and productionizing machine-learning models and pipelines 
-with [**Kedro**](https://kedro.org/#why-kedro), [**MLflow**](https://mlflow.org/docs/latest/), 
-and containerized deployments using [**Docker**](https://www.docker.com/). I support polyglot 
-data-science workflows with deep expertise in R complemented by effective integration of Python 
-when needed.
+- **Statistics & Experimentation:** Frequentist & Bayesian Inference, Hypothesis 
+  Testing, Causal Inference (IPW, Matching, Diff-in-Diff), A/B Testing, Survival 
+  Modeling, Time Series Analysis.
+- **Machine Learning:** Ensemble Methods, Causal ML (Double/Debiased ML, 
+  Generalized Random Forests, BART), Conformal Prediction, Model Calibration.
+- **Data & ML Engineering:** dbt, Kedro, MLflow, Docker, Bash Scripting.
+- **BI & Analytics:** BigQuery, Looker Studio, Mixpanel.
+- **CI/CD & Version Control:** GitHub Actions, GitLab CI, Git.
+- **Programming Languages:** R, Python, SQL.
 
 
 ## {{< iconify raphael:opensource >}} Open Source Contributions
 
-I contribute to open-source projects across R, Python, and the [Quarto](https://quarto.org/) 
-ecosystem. My work includes developing {{< iconify fa7-brands:r-project title="R" label="R" >}}&nbsp;packages
-such as [**MOR**](https://shafayetshafee.github.io/MOR/) and 
-[**skmisc**](https://shafayetshafee.github.io/skmisc/), as well as 
-{{< iconify carbon:logo-python title="Python" label="Python" >}}&nbsp;packages like 
-[**skmiscpy**](https://skmiscpy.readthedocs.io/en/latest/) for causal effect estimation and 
-[**kedrogen**](https://github.com/shafayetShafee/kedrogen), a CLI tool for scaffolding 
-reproducible Kedro project structures. I have also developed a range of Quarto extensions 
-(e.g., [*downloadthis*](https://github.com/shafayetShafee/downloadthis), 
-[*line-highlight*](https://github.com/shafayetShafee/line-highlight), and 
-[*interactive-sql*](https://github.com/shafayetShafee/interactive-sql)), using Lua, HTML/CSS, 
-and JavaScript to support more efficient and user-friendly scientific publishing workflows.
-
+My OSS work spans R, Python, and the [Quarto](https://quarto.org/) ecosystem. On the R side,
+I've developed [**MOR**](https://shafayetshafee.github.io/MOR/) and
+[**skmisc**](https://shafayetshafee.github.io/skmisc/), and on the Python side,
+[**skmiscpy**](https://skmiscpy.readthedocs.io/en/latest/) for causal effect estimation and
+[**kedrogen**](https://github.com/shafayetShafee/kedrogen), a CLI tool for scaffolding
+reproducible Kedro project structures. I've also built a range of Quarto extensions
+(e.g., [*downloadthis*](https://github.com/shafayetShafee/downloadthis),
+[*line-highlight*](https://github.com/shafayetShafee/line-highlight), and
+[*interactive-sql*](https://github.com/shafayetShafee/interactive-sql)) to support
+more efficient scientific publishing workflows.
 
 ## {{< iconify qlementine-icons:education-24 >}} Education {.education}
 
 - **_M.Sc._ in Applied Statistics**, **2023** <br>
   Grade: _**3.97** out of 4.00_ <br>
-  ISRT, University of Dhaka, Bangladesh
+  ISRT, University of Dhaka, Bangladesh <br>
+  
+  **Selected Coursework:**
+  Causal Inference, Multilevel Modeling, Bayesian Inference, 
+  Statistical Machine Learning, Spatial Statistics, Signal Processing.
+  
+  **Tools:** R, Python, SQL.
+  
 
 - **_B.Sc._ in Applied Statistics**, **2021** <br>
   Grade: _**3.96** out of 4.00_ <br>
-  ISRT, University of Dhaka, Bangladesh
+  ISRT, University of Dhaka, Bangladesh <br><br>
   
-
-## {{< iconify simple-icons:researchgate >}} Research & Publications
-
-I have one peer-reviewed publication in **PLoS ONE** (a Q1 journal), with two 
-additional works currently under review, preprints of which are available on arXiv. 
-[**See details here**](publications/index.qmd)  
-
+  **Selected Coursework:**
+  Calculus, Linear Algebra, Sampling Distributions, Sampling Methods, 
+  Statistical Inference, Stochastic Processes, Design and Analysis of Experiments,
+  Industrial Statistics and Operations Research, Mathematical Analysis,
+  Multivariate Statistics, Linear Regression Analysis, Generalized Linear Models, 
+  Epidemiology, Survival Analysis, Analysis of Time Series, Bayesian Inference,
+  Econometrics.
   
-## {{< iconify mdi:trophy-award >}} Honors & Awards
+  **Tools:** C, Excel, Octave, SPSS, Stata, Minitab, R.
+  
+  
+## {{< iconify mdi:trophy-award >}} Honors & Awards {.education}
 
 - **Dean's Award**, Faculty of Science, University of Dhaka · **2021** <br>
   Awarded in recognition of academic excellence. <br>
   ![ ](assets/images/deans-award.jpeg){.lightbox width="120px"}
 
-- **Conference Award for Scientists**, ISCB45 · **2024** <br>
+- **Conference Award for Scientists**, ISCB45, **2024** <br>
   Awarded at the 45th Annual Conference of the 
   [International Society for Clinical Biostatistics](https://iscb.international/) 
   (ISCB45), Thessaloniki, Greece, July 21–25, 2024, for the abstract titled *"Interval Estimation 
   of the Median Odds Ratio for Measuring Contextual Effects in Multilevel Data Using a Binary 
   Logistic Model."*  [[Abstract Book]](https://convin.gr/assets/files/misc/ISCB2024Program_AbstractBook.pdf){target="_blank"}
 
-- **National Science and Technology (NST) Fellowship** · **Oct 2023** <br>
+- **National Science and Technology (NST) Fellowship**, **Oct 2023** <br>
   Issued by the Ministry of Science and Technology, Government of Bangladesh, for thesis research 
   on multilevel modeling during M.Sc. at the University of Dhaka.
 

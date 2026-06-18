@@ -21,12 +21,12 @@ color:
     light: "#333333"
 typography:
   fonts:
-    - family: Source Sans pro
+    - family: Alegreya Sans # Source Sans pro
       source: google
-    - family: Fira Sans
+    - family: Alegreya Sans # Fira Sans
       source: google
-  base: Source Sans pro
-  headings: Source Sans pro
+  base: Alegreya Sans # Source Sans pro
+  headings: Alegreya Sans # Source Sans pro
   link:
     color: foreground
 defaults:

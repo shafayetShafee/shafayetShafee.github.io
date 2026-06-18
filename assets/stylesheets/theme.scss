@@ -3,6 +3,9 @@
 
 $navbar-font-family: "Alegreya Sans", sans-serif;
 
+$mc-radius: 8px !default;
+$mc-radius-sm: 4px !default;
+
 /*-- scss:rules --*/
 
 html {
@@ -293,3 +296,70 @@ body.quarto-dark .navbar-toggler-icon {
   }
 }
 
+.interests p {
+  margin-bottom: 0em;
+}
+
+.interests > ul li {
+  margin-bottom: 0em !important;
+}
+
+
+// ---------------------------
+// BLOCKQUOTE WITH CURLY QUOTES
+// ---------------------------
+blockquote {
+  position: relative;
+  margin: 1.5em 0;
+  padding: 1.5em 2em 1.5em 3em;
+  background-color: body-mix(98%);
+  border-left: 4px solid body-mix(70%);
+  border-radius: $mc-radius-sm;
+  font-style: italic;
+
+  // Opening curly quote (top-left)
+  &::before {
+    content: '\201C';
+    position: absolute;
+    top: 0.1em;
+    left: 0.3em;
+    font-size: 3em;
+    line-height: 1;
+    color: body-mix(70%);
+    font-family: Georgia, serif;
+    font-style: normal;
+  }
+
+  // Closing curly quote (bottom-right)
+  &::after {
+    content: '\201D';
+    position: absolute;
+    bottom: -0.3em;
+    right: 0.3em;
+    font-size: 3em;
+    line-height: 1;
+    color: body-mix(70%);
+    font-family: Georgia, serif;
+    font-style: normal;
+  }
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*
+.drop-cap {
+    float: left;
+    font-family: "Georgia", "Iowan Old Style", "Apple Garamond", serif;
+    font-size: 3.5rem;
+    line-height: 1;
+    padding: .05em .12em 0 0;
+    // color: #b5830a;
+    color: var(--bs-primary);
+    font-weight: 700;
+}*/
