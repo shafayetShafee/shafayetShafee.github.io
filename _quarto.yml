@@ -33,15 +33,14 @@ website:
     location: navbar
     type: overlay
   navbar:
-    title: "SKS"
+    title: "Shafayet Khan Shafee"
     search: true
     logo: assets/images/logo.svg
     logo-alt: "Shafayet Khan Shafee logo"
-    left: 
+
+    right:
       - href: index.qmd
         text: About
-        
-    right:
       - href: publications/index.qmd
         text: Publications
       - icon: mastodon
@@ -79,6 +78,3 @@ format:
         - assets/stylesheets/theme.scss
       dark: 
         - assets/stylesheets/theme.scss
-    css:
-    - "https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
-    - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
