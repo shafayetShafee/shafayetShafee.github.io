@@ -1,0 +1,11 @@
+color:
+  palette:
+    accent: "#b5830a"
+  primary: accent
+  foreground: "#111827" 
+  background: "#fafafa"
+typography:
+  fonts:
+    - family: Georgia
+      source: system
+  base: Georgia

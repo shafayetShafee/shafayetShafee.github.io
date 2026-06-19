@@ -1,5 +1,5 @@
 project:
-  type: website
+  type: mickaelcanouilfr
   render:
     - "*.qmd"
     - "!uv-cache/"
@@ -7,11 +7,14 @@ project:
 execute:
   freeze: auto
 
+lightbox: auto
+
 website:
   title: "SKS"
   description: "Personal Protfolio of Shafayet Khan Shafee"
   favicon: /assets/images/logo.svg
   image: /assets/images/bw_propic.jpeg
+  image-alt: "Profile picture of Shafayet Khan Shafee"
   site-url: https://shafayetshafee.github.io
   repo-url: https://github.com/shafayetShafee/shafayetShafee.github.io
   repo-link-target: "_blank"
@@ -23,9 +26,9 @@ website:
     left: |
       Built with [{{< iconify logos:r-lang title="R Logo" label="R Logo" >}}](https://www.r-project.org/)  & [Quarto](https://quarto.org).
     center: |
-      Copyright &copy; 2025 Shafayet Khan Shafee
+      &copy; []{#current-year} [Shafayet Khan Shafee](Shafayet Khan Shafee){target="_blank" rel="noopener noreferrer"}
     right: |
-      License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0)
+      License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0){target="_blank" rel="noopener noreferrer"}
   search:
     location: navbar
     type: overlay
@@ -34,50 +37,48 @@ website:
     search: true
     logo: assets/images/logo.svg
     logo-alt: "Shafayet Khan Shafee logo"
-    left:
+    left: 
       - href: index.qmd
         text: About
-      - href: publications/index.qmd
-        text: Publications
         
     right:
+      - href: publications/index.qmd
+        text: Publications
       - icon: mastodon
         href: https://fosstodon.org/@shafayet_shafee
-        target: "_blank"
+        target: _blank
+        rel: noopener noreferrer
+        aria-label: "Mastodon profile"
       - icon: bluesky
         href: https://bsky.app/profile/kshafayet.bsky.social
-        target: "_blank"
+        target: _blank
+        rel: noopener noreferrer
+        aria-label: "BlueSky profile"
       - icon: twitter-x
         href: https://x.com/shafayet_shafee
-        target: "_blank"
+        target: _blank
+        rel: noopener noreferrer
+        aria-label: "X (Twitter) profile"
       - icon: linkedin
         href: https://www.linkedin.com/in/shafayetshafee/
-        target: "_blank"
+        target: _blank
+        rel: noopener noreferrer
+        aria-label: "LinkedIn profile"
       - icon: github
         href: https://github.com/shafayetShafee
-        target: "_blank"
-        
+        target: _blank
+        rel: noopener noreferrer
+        aria-label: "GitHub profile"
+
+
 format:
-  html:
+  mickaelcanouilfr-html:
     smooth-scroll: true
     theme:
       light: 
-        - cosmo
-        - brand
         - assets/stylesheets/theme.scss
       dark: 
-        - solar
-        - brand
         - assets/stylesheets/theme.scss
-    page-layout: full
-    anchor-sections: true
-    email-obfuscation: javascript
-    link-external-newwindow: true
     css:
-      - "https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
-      - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    include-after-body: 
-      - file: assets/scripts/remove-empty-title-meta.html
-
-
-
+    - "https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"

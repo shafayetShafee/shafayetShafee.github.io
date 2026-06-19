@@ -5,9 +5,8 @@ execute:
   freeze: false
 ---
 
-:::{.publications}
+:::: {.publications}
 
-Below is a full list of my peer-reviewed publications and preprints, including links to open PDFs, associated datasets, code, and software where applicable.
 
 ```{python}
 #| output: true

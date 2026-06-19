@@ -1,0 +1,52 @@
+---
+nocite: "[@*]"
+references:
+- author:
+  - family: Shafee
+    given: Shafayet Khan
+  - family: Sium
+    given: Md. Niamul Islam
+  - family: Sarker
+    given: Bishal
+  - family: Islam
+    given: Riyadul
+  container-title: PLOS ONE
+  doi: 10.1371/journal.pone.0335972
+  id: shafee2025investigating
+  issue: 11
+  issued: 2025-11
+  page: 1-13
+  publisher: Public Library of Science
+  title: "Investigating the causal effect of maternal continuum of care
+    on child's minimum acceptable diet: A multilevel approach using
+    partially pooled propensity score weighting"
+  title-short: Investigating the causal effect of maternal continuum of
+    care on child's minimum acceptable diet
+  type: article-journal
+  url: "https://doi.org/10.1371/journal.pone.0335972"
+  volume: 20
+- author:
+  - family: Shafee
+    given: Shafayet Khan
+  - family: Rahman
+    given: M. Shafiqur
+  id: shafee2026estimationmor
+  issued: 2026
+  title: On the estimation of the median odds ratio for measuring
+    contextual effects in multilevel binary data from complex survey
+    designs
+  url: "https://arxiv.org/abs/2606.15145"
+- author:
+  - family: Shafee
+    given: Shafayet Khan
+  - family: Sarker
+    given: Bishal
+  - family: Sium
+    given: Md. Niamul Islam
+  id: shafee2026gcomputation
+  issued: 2026
+  title: G-computation for causal effect estimation from observational
+    hierarchical data with unmeasured cluster context
+  url: "https://arxiv.org/abs/2606.14131"
+---
+

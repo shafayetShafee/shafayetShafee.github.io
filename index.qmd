@@ -1,62 +1,63 @@
 ---
 title: "Shafayet Khan Shafee"
-subtitle: |
-  Statistician, Autodidact, and Bibliophile.
+subtitle: Statistician, Autodidact, and Bibliophile.
+image-alt: "Profile picture of Shafayet Khan Shafee"
 image: assets/images/bw_propic_crop.jpeg
 format:
-  html:
+  mickaelcanouilfr-html:
     grid:
-      body-width: 500px
+      body-width: 800px
 about:
   id: hero-banner
   template: solana
   image-width: 9em
   image-shape: round
+  image-title: "Shafayet Khan Shafee"
   links:
-    - icon: mastodon
-      text: Mastodon
-      href: https://fosstodon.org/@shafayet_shafee
-      target: "_blank"
-    - icon: bluesky
-      text: Bluesky
-      href: https://bsky.app/profile/kshafayet.bsky.social
-      target: "_blank"
-    - icon: twitter-x
-      text: Twitter
-      href: https://x.com/shafayet_shafee
-      target: "_blank"
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/shafayetshafee/
-      target: "_blank"
-    - icon: github
-      text: Github
-      href: https://github.com/shafayetShafee
-      target: "_blank"
-    - text: '{{< iconify academicons:google-scholar size=xl style="margin-right: -0.2em;" >}} Google Scholar'
-      href: https://scholar.google.com/citations?user=GSgDEx0AAAAJ&hl=en
-      target: "_blank"
-    - text: '{{< iconify academicons:orcid style="margin-right: -0.2em" >}} ORCID'
-      href: https://orcid.org/0009-0002-8021-3788
-      target: "_blank"
-    - icon: envelope-at-fill
-      text: Mail
-      href: mailto:sshafee@isrt.ac.bd
+    - text: '{{< iconify fa7-brands:bluesky title="BlueSky" label="BlueSky logo linking to kshafayet.bsky.social account" >}}'
+      href: "https://bsky.app/profile/kshafayet.bsky.social"
+      aria-label: "BlueSky"
+      target: _blank
+      rel: noopener noreferrer
+    - text: '{{< iconify fa7-brands:mastodon title="Mastodon" label="Mastodon logo linking to shafayet_shafee Fosstodon account" >}}'
+      href: "https://fosstodon.org/@shafayet_shafee"
+      aria-label: "Mastodon"
+      rel: me noopener noreferrer
+      target: _blank
+    - text: '{{< iconify fa7-brands:orcid title="ORCID" label="ORCID logo linking to Shafayet Khan Shafee ORCID account" >}}'
+      href: "https://orcid.org/0009-0002-8021-3788"
+      aria-label: "ORCID"
+      target: _blank
+      rel: noopener noreferrer
+    - text: '{{< iconify fa7-brands:linkedin title="LinkedIn" label="LinkedIn logo linking to shafayetshafee account" >}}'
+      href: "https://www.linkedin.com/in/shafayetshafee"
+      aria-label: "LinkedIn"
+      target: _blank
+      rel: noopener noreferrer
+    - text: '{{< iconify octicon:mark-github-16 title="GitHub" label="GitHub logo linking to shafayetShafee account" >}}'
+      href: "https://github.com/shafayetShafee"
+      aria-label: "GitHub"
+      target: _blank
+      rel: noopener noreferrer
+    - text: '{{< iconify fa7-solid:envelope title="Email" label="Envelope logo for email" >}}'
+      href: "mailto:sshafee@isrt.ac.bd"
+      aria-label: "Email"
 ---
 
 ::: {#hero-banner}
-
 :::
 
-::: {.about-body}
+:::: {.about-body}
 
+:::: {.quote-intro}
 
-> I'm a **Data Scientist** and **Statistician** with a focus on applying statistical 
+> *I'm a **Data Scientist** and **Statistician** with a focus on applying statistical 
 thinking to real product and business decisions. My interests and expertise lie 
 at the intersection of applied statistics, machine learning, and open-source 
 development &mdash; turning rigorous analytical ideas into practical tools, 
-software, and workflows. ^[All em-dashes are mine!]
+software, and workflows. ^[All em-dashes are mine!]*
 
+:::
 
 ## {{< iconify streamline-freehand:office-work-wireless >}} What I Do
 
@@ -90,23 +91,22 @@ My published work so far centres on **causal inference** and **hierarchical mode
 with a focus on developing and applying rigorous statistical methods to complex 
 observational data from public health settings.
 
-::: {.highlight}
+:::: {.highlight}
 
 I have one peer-reviewed publication in *PLoS ONE* (a Q1 journal) on estimating 
 the causal effect of maternal continuum of care on child nutrition in Bangladesh 
-using multilevel propensity score methods. Two additional works are currently 
-under review &mdash; one on g-computation for causal effect estimation in 
-hierarchical observational data, and one on estimation of the median odds ratio 
-for measuring contextual effects in multilevel binary data &mdash; preprints of 
-both are available on arXiv.
-
-[**See full list of publications &rarr;**](publications/index.qmd)
+using multilevel propensity score methods.
 
 :::
 
+Two additional works are currently under review &mdash; one on g-computation for 
+causal effect estimation in hierarchical observational data, and one on estimation 
+of the median odds ratio for measuring contextual effects in multilevel binary 
+data &mdash; preprints of both are available on arXiv. [See full list of publications &rarr;](publications/index.qmd)
+
 ::: {.interests}
 
-### Research Interests
+#### Research Interests
 
 - Causal Inference
 - Hierarchical Modeling
@@ -148,32 +148,31 @@ both are available on arXiv.
 ## {{< iconify raphael:opensource >}} Open Source Contributions
 
 My OSS work spans R, Python, and the [Quarto](https://quarto.org/) ecosystem. On the R side,
-I've developed [**MOR**](https://shafayetshafee.github.io/MOR/) and
-[**skmisc**](https://shafayetshafee.github.io/skmisc/), and on the Python side,
-[**skmiscpy**](https://skmiscpy.readthedocs.io/en/latest/) for causal effect estimation and
-[**kedrogen**](https://github.com/shafayetShafee/kedrogen), a CLI tool for scaffolding
+I've developed [MOR](https://shafayetshafee.github.io/MOR/) and
+[skmisc](https://shafayetshafee.github.io/skmisc/), and on the Python side,
+[skmiscpy](https://skmiscpy.readthedocs.io/en/latest/) for causal effect estimation and
+[kedrogen](https://github.com/shafayetShafee/kedrogen), a CLI tool for scaffolding
 reproducible Kedro project structures. I've also built a range of Quarto extensions
-(e.g., [*downloadthis*](https://github.com/shafayetShafee/downloadthis),
-[*line-highlight*](https://github.com/shafayetShafee/line-highlight), and
-[*interactive-sql*](https://github.com/shafayetShafee/interactive-sql)) to support
+(e.g., [downloadthis](https://github.com/shafayetShafee/downloadthis),
+[line-highlight](https://github.com/shafayetShafee/line-highlight), and
+[interactive-sql](https://github.com/shafayetShafee/interactive-sql)) to support
 more efficient scientific publishing workflows.
 
 ## {{< iconify qlementine-icons:education-24 >}} Education {.education}
 
-- **_M.Sc._ in Applied Statistics**, **2023** <br>
+- [2023]{.year} **_M.Sc._ in Applied Statistics**\
   Grade: _**3.97** out of 4.00_ <br>
-  ISRT, University of Dhaka, Bangladesh <br>
+  [*ISRT, University of Dhaka, Bangladesh*]{.institution} <br><br>
   
   **Selected Coursework:**
   Causal Inference, Multilevel Modeling, Bayesian Inference, 
   Statistical Machine Learning, Spatial Statistics, Signal Processing.
   
   **Tools:** R, Python, SQL.
-  
 
-- **_B.Sc._ in Applied Statistics**, **2021** <br>
+- [2021]{.year} **_B.Sc._ in Applied Statistics**\
   Grade: _**3.96** out of 4.00_ <br>
-  ISRT, University of Dhaka, Bangladesh <br><br>
+  [*ISRT, University of Dhaka, Bangladesh*]{.institution} <br><br>
   
   **Selected Coursework:**
   Calculus, Linear Algebra, Sampling Distributions, Sampling Methods, 
@@ -185,10 +184,14 @@ more efficient scientific publishing workflows.
   
   **Tools:** C, Excel, Octave, SPSS, Stata, Minitab, R.
   
-  
-## {{< iconify mdi:trophy-award >}} Honors & Awards {.education}
+- [2017]{.year} **_H.S.C._ (Science)**\
+  Grade: _**5.00** out of 5.00_
 
-- **Dean's Award**, Faculty of Science, University of Dhaka · **2021** <br>
+
+  
+## {{< iconify mdi:trophy-award >}} Honors & Awards
+
+- **Dean's Award**, Faculty of Science, University of Dhaka, **2021** <br>
   Awarded in recognition of academic excellence. <br>
   ![ ](assets/images/deans-award.jpeg){.lightbox width="120px"}
 
@@ -204,7 +207,7 @@ more efficient scientific publishing workflows.
   on multilevel modeling during M.Sc. at the University of Dhaka.
 
 
-## {{< iconify material-symbols:interests >}} Interests {.interests}
+## {{< iconify material-symbols:interests >}} Work Interests {.interests}
 
 - Causal Inference
 - Experimentation

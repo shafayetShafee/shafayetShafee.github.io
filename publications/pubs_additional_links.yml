@@ -6,7 +6,7 @@ shafee2025investigating:
     icon: fa fa-file-pdf
     text: PDF
   - link: https://doi.org/10.6084/m9.figshare.30073489
-    icon: ai ai-figshare
+    icon: ai ai-open-data
     text: Paper Data
   - link: https://github.com/shafayetShafee/mad-coc-IPW/
     icon: fa-brands fa-github
@@ -17,7 +17,7 @@ shafee2026gcomputation:
     icon: fa fa-file-pdf
     text: PDF
   - link: https://doi.org/10.6084/m9.figshare.32674908
-    icon: ai ai-figshare
+    icon: ai ai-open-data
     text: Paper Data
   - link: https://github.com/shafayetShafee/within-group-gcomp
     icon: fa-brands fa-github
@@ -28,7 +28,7 @@ shafee2026estimationmor:
     icon: fa fa-file-pdf
     text: PDF
   - link: https://mics.unicef.org/surveys?display=card&f[0]=round:53&f[1]=region:3781&f[2]=datatype:0&f[3]=status:241
-    icon: ai ai-figshare
+    icon: ai ai-open-data
     text: Paper Data
   - link: https://github.com/shafayetShafee/contained-thesis
     icon: fa-brands fa-github
