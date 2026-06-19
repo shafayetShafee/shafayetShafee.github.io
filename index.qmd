@@ -51,17 +51,17 @@ about:
 
 :::: {.quote-intro}
 
-> *I'm a **Data Scientist** and **Statistician** with a focus on applying statistical 
-thinking to real product and business decisions. My interests and expertise lie 
-at the intersection of applied statistics, machine learning, and open-source 
-development &mdash; turning rigorous analytical ideas into practical tools, 
-software, and workflows. ^[All em-dashes are mine!]*
+> *I'm a __*Data Scientist*__ and __*Statistician*__ with a focus on applying 
+statistical thinking to real product and business decisions. My interests and 
+expertise lie at the intersection of applied statistics, machine learning, and 
+open-source development &mdash; turning rigorous analytical ideas into practical 
+tools, software, and workflows. ^[All em-dashes are mine!]*
 
 :::
 
 ## {{< iconify streamline-freehand:office-work-wireless >}} What I Do
 
-In my day job, I work as a data scientist, where I spend most of my time building 
+[I]{.drop-cap}n my day job, I work as a data scientist, where I spend most of my time building 
 data pipelines and models, designing and analyzing experiments, and applying 
 causal inference and machine learning methods to product and business problems 
 &mdash; things like measuring the impact of product rollouts, estimating 
@@ -87,9 +87,9 @@ scientific computing languages like **Julia** {{< iconify ic:round-rocket-launch
 
 ## {{< iconify simple-icons:researchgate >}} Research & Publications
 
-My published work so far centres on **causal inference** and **hierarchical modeling**, 
-with a focus on developing and applying rigorous statistical methods to complex 
-observational data from public health settings.
+[M]{.drop-cap}y published work so far centres on __*causal inference*__ and 
+__*hierarchical modeling*__, with a focus on developing and applying rigorous 
+statistical methods to complex observational data from public health settings.
 
 :::: {.highlight}
 
@@ -132,7 +132,7 @@ data &mdash; preprints of both are available on arXiv. [See full list of publica
   Dhaka, Bangladesh
   
 
-## {{< iconify fluent:window-dev-tools-20-regular >}} Technical Skills
+## {{< iconify fluent:window-dev-tools-20-regular >}} Technical Skills {.skills}
 
 - **Statistics & Experimentation:** Frequentist & Bayesian Inference, Hypothesis 
   Testing, Causal Inference (IPW, Matching, Diff-in-Diff), A/B Testing, Survival 
@@ -147,65 +147,71 @@ data &mdash; preprints of both are available on arXiv. [See full list of publica
 
 ## {{< iconify raphael:opensource >}} Open Source Contributions
 
-My OSS work spans R, Python, and the [Quarto](https://quarto.org/) ecosystem. On the R side,
-I've developed [MOR](https://shafayetshafee.github.io/MOR/) and
-[skmisc](https://shafayetshafee.github.io/skmisc/), and on the Python side,
-[skmiscpy](https://skmiscpy.readthedocs.io/en/latest/) for causal effect estimation and
-[kedrogen](https://github.com/shafayetShafee/kedrogen), a CLI tool for scaffolding
+[M]{.drop-cap}y OSS work spans R, Python, and the *[Quarto](https://quarto.org/)* 
+ecosystem. On the R side, I've developed *[MOR](https://shafayetshafee.github.io/MOR/)* 
+and *[skmisc](https://shafayetshafee.github.io/skmisc/)*, and on the Python side,
+*[skmiscpy](https://skmiscpy.readthedocs.io/en/latest/)* for causal effect estimation 
+and *[kedrogen](https://github.com/shafayetShafee/kedrogen)*, a CLI tool for scaffolding
 reproducible Kedro project structures. I've also built a range of Quarto extensions
-(e.g., [downloadthis](https://github.com/shafayetShafee/downloadthis),
-[line-highlight](https://github.com/shafayetShafee/line-highlight), and
-[interactive-sql](https://github.com/shafayetShafee/interactive-sql)) to support
+(e.g., *[downloadthis](https://github.com/shafayetShafee/downloadthis)*,
+*[line-highlight](https://github.com/shafayetShafee/line-highlight)*, and
+*[interactive-sql](https://github.com/shafayetShafee/interactive-sql)*) to support
 more efficient scientific publishing workflows.
+
 
 ## {{< iconify qlementine-icons:education-24 >}} Education {.education}
 
 - [2023]{.year} **_M.Sc._ in Applied Statistics**\
   Grade: _**3.97** out of 4.00_ <br>
-  [*ISRT, University of Dhaka, Bangladesh*]{.institution} <br><br>
-  
-  **Selected Coursework:**
-  Causal Inference, Multilevel Modeling, Bayesian Inference, 
-  Statistical Machine Learning, Spatial Statistics, Signal Processing.
-  
-  **Tools:** R, Python, SQL.
+  [*ISRT, University of Dhaka, Bangladesh*]{.institution} <br>
+
+  ::: {.coursework-tags}
+  [Multilevel Modeling]{.tag} [Causal Inference]{.tag} [Bayesian Inference]{.tag}
+  [Spatial Statistics]{.tag} [Signal Processing]{.tag} [Statistical Machine Learning]{.tag} 
+  [R]{.tag-tool} [Python]{.tag-tool} [SQL]{.tag-tool}
+  :::
 
 - [2021]{.year} **_B.Sc._ in Applied Statistics**\
   Grade: _**3.96** out of 4.00_ <br>
-  [*ISRT, University of Dhaka, Bangladesh*]{.institution} <br><br>
-  
-  **Selected Coursework:**
-  Calculus, Linear Algebra, Sampling Distributions, Sampling Methods, 
-  Statistical Inference, Stochastic Processes, Design and Analysis of Experiments,
-  Industrial Statistics and Operations Research, Mathematical Analysis,
-  Multivariate Statistics, Linear Regression Analysis, Generalized Linear Models, 
-  Epidemiology, Survival Analysis, Analysis of Time Series, Bayesian Inference,
-  Econometrics.
-  
-  **Tools:** C, Excel, Octave, SPSS, Stata, Minitab, R.
-  
+  [*ISRT, University of Dhaka, Bangladesh*]{.institution} <br>
+
+  ::: {.coursework-tags}
+  [Calculus]{.tag} [Linear Algebra]{.tag} [Mathematical Analysis]{.tag}
+  [Sampling Distributions]{.tag} [Statistical Inference]{.tag} [Stochastic Processes]{.tag}
+  [Linear Regression Analysis]{.tag} [Generalized Linear Models]{.tag} 
+  [Multivariate Statistics]{.tag} [Bayesian Inference]{.tag} 
+  [Design and Analysis of Experiments]{.tag} [Sampling Methods]{.tag} 
+  [Industrial Statistics]{.tag} [Operations Research]{.tag}
+  [Survival Analysis]{.tag} [Analysis of Time Series]{.tag} [Epidemiology]{.tag} 
+  [Econometrics]{.tag} [C]{.tag-tool} [Excel]{.tag-tool} [Octave]{.tag-tool} 
+  [SPSS]{.tag-tool} [Stata]{.tag-tool} [Minitab]{.tag-tool} [R]{.tag-tool}
+  :::
+
 - [2017]{.year} **_H.S.C._ (Science)**\
-  Grade: _**5.00** out of 5.00_
+  Grade: _**5.00** out of 5.00_ <br>
+  [*Dhaka, Bangladesh*]{.institution}
 
 
   
-## {{< iconify mdi:trophy-award >}} Honors & Awards
+## {{< iconify mdi:trophy-award >}} Honors & Awards {.awards}
 
-- **Dean's Award**, Faculty of Science, University of Dhaka, **2021** <br>
-  Awarded in recognition of academic excellence. <br>
-  ![ ](assets/images/deans-award.jpeg){.lightbox width="120px"}
+- [2024]{.year} **Conference Award for Scientists** — ISCB45 <br>
+  Awarded at the 45th Annual Conference of the
+  [International Society for Clinical Biostatistics](https://iscb.international/)
+  (ISCB45), Thessaloniki, Greece, July 21–25, 2024, for the abstract titled
+  *"Interval Estimation of the Median Odds Ratio for Measuring Contextual Effects
+  in Multilevel Data Using a Binary Logistic Model."*\
+  [[Abstract Book →]](https://convin.gr/assets/files/misc/ISCB2024Program_AbstractBook.pdf){target="_blank" .award-link}
 
-- **Conference Award for Scientists**, ISCB45, **2024** <br>
-  Awarded at the 45th Annual Conference of the 
-  [International Society for Clinical Biostatistics](https://iscb.international/) 
-  (ISCB45), Thessaloniki, Greece, July 21–25, 2024, for the abstract titled *"Interval Estimation 
-  of the Median Odds Ratio for Measuring Contextual Effects in Multilevel Data Using a Binary 
-  Logistic Model."*  [[Abstract Book]](https://convin.gr/assets/files/misc/ISCB2024Program_AbstractBook.pdf){target="_blank"}
+- [2023]{.year} **National Science and Technology (NST) Fellowship** <br>
+  Issued by the *Ministry of Science and Technology (MoST), Government of Bangladesh*, 
+  for thesis research on multilevel modeling during M.Sc. at the University of Dhaka.
 
-- **National Science and Technology (NST) Fellowship**, **Oct 2023** <br>
-  Issued by the Ministry of Science and Technology, Government of Bangladesh, for thesis research 
-  on multilevel modeling during M.Sc. at the University of Dhaka.
-
+- [2021]{.year} **Dean's Award** <br>
+  Awarded by the *Faculty of Science, University of Dhaka*, in recognition of 
+  academic excellence throughout the B.Sc. programme.
+  ![ ](assets/images/deans-award.jpeg){.lightbox .award-cert width="100px"}
+  
 
 ## {{< iconify material-symbols:interests >}} Work Interests {.interests}
 

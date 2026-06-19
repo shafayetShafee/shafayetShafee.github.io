@@ -1,19 +1,18 @@
 /*-- scss:defaults --*/
 
-/*-- scss:rules --*/
+$pub-padding: 1.2rem 1.4rem;
 
-html {
-  scroll-behavior: smooth;
-}
+// $mc-accent is defined _extensions/mickaelcanouilfr/scss/_rules.scss
+
+/*-- scss:rules --*/
 
 .about-body {
   margin-top: 1rem !important;
 }
 
-
-// ─────────────────────────────────────────────────────────────
-//  INTRO BLOCKQUOTE — styled as a centered pull-quote
-// ─────────────────────────────────────────────────────────────
+// =========================
+// INTRO BLOCKQUOTE 
+// ========================= 
 
 .quote-intro {
   margin-bottom: 2.5rem;
@@ -23,15 +22,14 @@ html {
     margin: 1.25rem auto 0;
     padding: 1.4rem 2.6rem 2.2rem;
     max-width: 100%;
-    background: rgba(181, 131, 10, 0.06);
-    border-left: 4px solid var(--bs-primary);
-    border-right: 4px solid var(--bs-primary);
+    border-left: 4px solid $mc-accent;
+    border-right: 4px solid $mc-accent;
+    background: rgba($mc-accent, 0.06);
     border-radius: 4px;
     font-style: italic;
     font-family: "Georgia", "Iowan Old Style", "Apple Garamond", serif;
     text-align: center;
 
-    // Opening curly quote (top-left)
     &::before {
       content: '\201C';
       position: absolute;
@@ -39,13 +37,12 @@ html {
       left: 0.3em;
       font-size: 3em;
       line-height: 1;
-      color: var(--bs-primary);
+      color: $mc-accent;
       font-family: Georgia, serif;
       font-style: normal;
       opacity: 0.55;
     }
- 
-    // Closing curly quote (bottom-right)
+
     &::after {
       content: '\201D';
       position: absolute;
@@ -53,7 +50,7 @@ html {
       right: 0.3em;
       font-size: 3em;
       line-height: 1;
-      color: var(--bs-primary);
+      color: $mc-accent;
       font-family: Georgia, serif;
       font-style: normal;
       opacity: 0.55;
@@ -71,7 +68,6 @@ html {
       margin-bottom: 0;
     }
 
-    // Footnote ref inside the quote — subtle, not a jarring link style
     .footnote-ref {
       font-style: normal;
       text-decoration: none;
@@ -79,21 +75,210 @@ html {
   }
 }
 
-// ─────────────────────────────────────────────────────────────
-//  STYLES FOR PUBLICATIONS
-// ─────────────────────────────────────────────────────────────
 
+#quarto-content:has(.quarto-about-solana) {
+  overflow-x: hidden;
+  
+  .about-body p {
+    font-size: 1.05rem;
+    line-height: 1.75rem;
+  }
+  
+  section.education > ul > li {
+    // shared tag styling for both coursework and tools
+    .coursework-tags,
+    .tools-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.05rem;
+      max-width: 35rem;
+      margin-top: 0.3rem;
+  
+      .tag {
+        display: inline-block;
+        padding: 0.25em 0.7em;
+        font-size: 0.78rem;
+        border-radius: 0.25em;
+        border: 1px solid rgba($mc-accent, 0.4);
+        color: rgba($body-color, 0.75);
+        background: rgba($mc-accent, 0.05);
+        line-height: 1.4;
+        font-style: italic;
+      }
+      
+      .tag-tool {
+        display: inline-block;
+        padding: 0.25em 0.7em;
+        font-size: 0.74rem;
+        border-radius: 0.25em;
+        border: 1px solid rgba($mc-accent, 0.6);
+        color: $body-color;
+        background: rgba($mc-accent, 0.12);
+        line-height: 1.4;
+        font-family: monospace;
+      }
+    }
+  
+    .coursework-tags::before,
+    .tools-tags::before {
+      display: block;
+      width: 100%;
+      font-size: 0.66rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: $mc-accent;
+      margin-bottom: 0.05rem;
+    }
+  
+    .coursework-tags::before {
+      content: "Coursework";
+    }
+  
+    .tools-tags::before {
+      content: "Tools";
+      margin-top: 0.4rem;
+    }
+  }
+
+  section.skills > ul,
+  ul.skills {
+    list-style: none;
+    padding-left: 1rem;
+    border-left: 2px solid $mc-accent;
+    margin-top: 1rem;
+
+    > li {
+      position: relative;
+      padding: 0.25rem 0 0.5rem 1rem;
+
+      &::before {
+        content: "\25A0";
+        color: $mc-accent;
+        position: absolute;
+        left: -0.55rem;
+        top: 0.3rem;
+        font-size: 0.6em;
+        background: $body-bg;
+        padding: 0 0.2em;
+      }
+    }
+  }
+  
+  section.awards > ul {
+    list-style: none;
+    padding: 0.5rem 0 0.25rem 4.5rem;
+    position: relative;
+    margin-top: 1rem;
+    border: 0;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      left: 2.5rem;
+      top: 0.4rem;
+      bottom: 0.4rem;
+      width: 2px;
+      background: $mc-accent;
+    }
+  
+    > li {
+      position: relative;
+      padding: 0.35rem 0 1.1rem 0.75rem;
+      margin: 0;
+      background: transparent;
+      border: 0;
+  
+      &::before {
+        content: none;
+      }
+  
+      &:last-child {
+        padding-bottom: 0;
+      }
+  
+      &:hover .year {
+        transform: scale(1.06);
+        box-shadow:
+          0 0 0 4px $body-bg,
+          0 0 0 6px rgba($mc-accent, 0.18);
+      }
+  
+      .year {
+        position: absolute;
+        left: -3.5rem;
+        top: 0.1rem;
+        width: 3rem;
+        height: 3rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: $body-bg;
+        border: 2px solid $mc-accent;
+        color: $mc-accent;
+        font-family: $font-family-serif;
+        font-weight: 700;
+        font-size: 0.78rem;
+        box-shadow: 0 0 0 4px $body-bg;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+  
+      p {
+        margin: 0.3rem 0 0;
+        font-size: 0.92rem;
+        line-height: 1.55;
+        color: rgba($body-color, 0.75);
+      }
+    }
+  
+    .award-link {
+      display: inline-block;
+      margin-top: 0.4rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+  
+    .award-cert {
+      display: block;
+      margin-top: 0.6rem;
+      border-radius: 4px;
+      border: 1px solid rgba($mc-accent, 0.3);
+    }
+    
+    .award-divider {
+        height: 1px;
+        background: repeating-linear-gradient(
+          to right,
+          rgba($mc-accent, 0.3) 0,
+          rgba($mc-accent, 0.3) 4px,
+          transparent 4px,
+          transparent 8px
+        );
+        margin: 0.75rem 0;
+      }
+  }
+}
+
+// =========================
+// PUBLICATIONS
+// =========================
 
 #quarto-content:has(.publications) {
   overflow-x: hidden;
-  
+
+  /* Year heading size */
   h2.pub-year .pub-year-num {
     font-size: clamp(2.2rem, 5vw, 3.2rem);
   }
 
+  /* Publication card */
   .pub-entry {
-    background-color: body-mix(98%);
-    padding: 1.2rem 1.4rem;
+    padding: $pub-padding;
+
+    /* body-mix is defined function in 
+    _extensions/mickaelcanouilfr/scss/_rules.scss */
+    background-color: body-mix(98%); 
   }
 }
 
