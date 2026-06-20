@@ -2,34 +2,19 @@
 # e.g. @article{shafee2025investigating, ...} → key is shafee2025investigating
 
 shafee2025investigating:
-  - link: https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0335972&type=printable
-    icon: fa fa-file-pdf
-    text: PDF
   - link: https://doi.org/10.6084/m9.figshare.30073489
-    icon: ai ai-figshare
     text: Paper Data
   - link: https://github.com/shafayetShafee/mad-coc-IPW/
-    icon: fa-brands fa-github
     text: Paper Code
 
 shafee2026gcomputation:
-  - link: https://arxiv.org/pdf/2606.14131
-    icon: fa fa-file-pdf
-    text: PDF
   - link: https://doi.org/10.6084/m9.figshare.32674908
-    icon: ai ai-figshare
     text: Paper Data
   - link: https://github.com/shafayetShafee/within-group-gcomp
-    icon: fa-brands fa-github
     text: Paper Code
 
 shafee2026estimationmor:
-  - link: https://arxiv.org/pdf/2606.15145
-    icon: fa fa-file-pdf
-    text: PDF
   - link: https://mics.unicef.org/surveys?display=card&f[0]=round:53&f[1]=region:3781&f[2]=datatype:0&f[3]=status:241
-    icon: ai ai-figshare
     text: Paper Data
   - link: https://github.com/shafayetShafee/contained-thesis
-    icon: fa-brands fa-github
     text: Paper Code

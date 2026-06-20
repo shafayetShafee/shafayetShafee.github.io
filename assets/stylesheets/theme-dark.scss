@@ -1,0 +1,23 @@
+/*-- scss:defaults --*/
+// =============================================================================
+// theme-dark.scss — Modern Teal Research (DARK mode)
+//
+// $mc-accent brightened to #19b8a8 — a deliberate middle ground:
+//   vs dark_bg (#161616):  7.29:1  (bright, glowy, reads clearly)
+//   vs ink_dark (#f8fafc): 2.37:1  (still separated from near-white text;
+//                                    going brighter than this starts to
+//                                    blend the accent into body text —
+//                                    e.g. #4fd1c5 only reaches 1.78:1 here)
+//
+// $mc-accent-link kept equal to $mc-accent (matches the extension's own
+// dark-mode convention of using one bright color for both). Let me know
+// if you'd rather split them into two distinct shades.
+//
+// $mc-paper-warm deepened slightly for a touch more visible alternating
+// section background (was nearly identical to $body-bg before).
+// =============================================================================
+
+$mc-paper-warm: #122a2d;
+
+$mc-accent: #19b8a8;
+$mc-accent-link: #19b8a8;

@@ -5,26 +5,20 @@ execute:
   freeze: false
 ---
 
-:::{.publications}
+:::: {.publications}
 
-Below is a full list of my peer-reviewed publications and preprints, including links to open PDFs, associated datasets, code, and software where applicable.
 
 ```{python}
 #| output: true
 #| echo: false
 
-import dominate.tags as tags
-from parse_publications import make_pub, KEYS_BY_YEAR
+from parse_publications import render_year_section, KEYS_BY_YEAR
 from IPython.display import HTML
 
 elements = []
+
 for year in sorted(KEYS_BY_YEAR.keys(), reverse=True):
-    keys = KEYS_BY_YEAR[year]
-    elements.append(tags.h2(year))
-    ul = tags.ul()
-    for key in keys:
-        ul += tags.li(make_pub(key))
-    elements.append(ul)
+    elements.append(render_year_section(year))
 
 html = "\n".join([e.render() for e in elements])
 HTML(html)
