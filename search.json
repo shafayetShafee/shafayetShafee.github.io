@@ -4,69 +4,76 @@
     "href": "publications/index.html",
     "title": "Publications",
     "section": "",
-    "text": "Below is a full list of my peer-reviewed publications and preprints, including links to open PDFs, associated datasets, code, and software where applicable.\n\n\n2026\n\n  \n    \n      Shafee, S. K., Rahman, M. S. (2026). \n      On the estimation of the median odds ratio for measuring contextual effects in multilevel binary data from complex survey designs. arXiv:2606.15145 [STAT.ME].\n       arXiv\n       PDF\n       Paper Data\n       Paper Code\n    \n  \n  \n    \n      Shafee, S. K., Sarker, B., Sium, M. N. I. (2026). \n      G-computation for causal effect estimation from observational hierarchical data with unmeasured cluster context. arXiv:2606.14131 [STAT.ME].\n       arXiv\n       PDF\n       Paper Data\n       Paper Code\n    \n  \n\n2025\n\n  \n    \n      Shafee, S. K., Sium, M. N. I., Sarker, B., Islam, R. (2025). \n      Investigating the causal effect of maternal continuum of care on child’s minimum acceptable diet: A multilevel approach using partially pooled propensity score weighting. PLOS ONE, 20(11), 1–13.\n       DOI\n       PDF\n       Paper Data\n       Paper Code\n    \n  \n\n\n\n\n\n\n\n Back to top"
+    "text": "Skip to main content\n\n\n\n\n\n\n\n\n\n  \n    2026\n  \n  \n    \n      \n        Preprint\n        June 2026\n      \n      \n        Shafee, S. K., Rahman, M. S.\n      \n      \n        On the estimation of the median odds ratio for measuring contextual effects in multilevel binary data from complex survey designs\n      \n      \n        arXiv preprint, \n        arXiv:2606.15145 [stat.ME]\n      \n      \n        arXiv\n        Paper Data\n        Paper Code\n        BibTeX\n      \n    \n    \n      \n        Preprint\n        June 2026\n      \n      \n        Shafee, S. K., Sarker, B., Sium, M. N. I.\n      \n      \n        G-computation for causal effect estimation from observational hierarchical data with unmeasured cluster context\n      \n      \n        arXiv preprint, \n        arXiv:2606.14131 [stat.ME]\n      \n      \n        arXiv\n        Paper Data\n        Paper Code\n        BibTeX\n      \n    \n  \n\n\n  \n    2025\n  \n  \n    \n      \n        Article\n        November 2025\n      \n      \n        Shafee, S. K., Sium, M. N. I., Sarker, B., Islam, R.\n      \n      \n        Investigating the causal effect of maternal continuum of care on child’s minimum acceptable diet: A multilevel approach using partially pooled propensity score weighting\n      \n      \n        PLOS ONE, \n        vol. 20, no. 11, pp. 1–13\n      \n      \n        DOI\n        Paper Data\n        Paper Code\n        BibTeX\n      \n    \n  \n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Shafayet Khan Shafee",
     "section": "",
-    "text": "Mastodon\n  \n  \n    \n     Bluesky\n  \n  \n    \n     Twitter\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Github\n  \n  \n      Google Scholar\n  \n  \n      ORCID\n  \n  \n    \n     Mail"
+    "text": "Skip to main content"
   },
   {
-    "objectID": "index.html#what-i-do",
-    "href": "index.html#what-i-do",
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e6966792073747265616d6c696e652d6672656568616e643a6f66666963652d776f726b2d776972656c657373203e7d7d-what-i-do",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e6966792073747265616d6c696e652d6672656568616e643a6f66666963652d776f726b2d776972656c657373203e7d7d-what-i-do",
     "title": "Shafayet Khan Shafee",
     "section": " What I Do",
-    "text": "What I Do\nI translate complex data problems into clear, actionable insights. My work spans machine learning, causal inference, and experimentation, and I spend a lot of time designing experiments and developing scalable data workflows.\nLately, I’ve been digging deeper into methods at the intersection of causal inference and hierarchical modeling, as well as modern causal ML approaches like metalearners, double machine learning, and causal forests. I’m also very enthusiastic about OSS development: I have developed a few  packages,  packages, and Quarto extensions, and I’m always looking for ways to improve the tools I rely on. R is my first love , but I also work comfortably with Python & SQL , and I’m currently exploring Rust and Julia to broaden my toolkit, mostly because they’re fast !!"
+    "text": "What I Do\nIn my day job, I work as a data scientist, where I spend most of my time building data pipelines and models, designing and analyzing experiments, and applying causal inference and machine learning methods to product and business problems — things like measuring the impact of product rollouts, estimating heterogeneous treatment effects, and modeling repayment risk.\nOutside of work, I read and explore a fair bit — mostly around causal inference (IPW, confounding bias, meta-learners, double machine learning, causal forests), Bayesian inference, survival analysis, and lately sensitivity analysis in causal inference. Some of that eventually turns into research; the rest just feeds my curiosity.\nI’m also quite enthusiastic about open-source development. I’ve built a few  packages,  packages, and Quarto extensions, and I’m always looking for ways to improve the tools I rely on. R is my first love , but I also work comfortably with Python & SQL . Along the way I also picked up a bit of Lua while building Quarto extensions, and I have a long-standing curiosity about systems languages like Rust and high-performance scientific computing languages like Julia ."
   },
   {
-    "objectID": "index.html#work-experience",
-    "href": "index.html#work-experience",
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e6966792073696d706c652d69636f6e733a726573656172636867617465203e7d7d-research-publications",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e6966792073696d706c652d69636f6e733a726573656172636867617465203e7d7d-research-publications",
+    "title": "Shafayet Khan Shafee",
+    "section": " Research & Publications",
+    "text": "Research & Publications\nMy published work so far centres on causal inference and hierarchical modeling, with a focus on developing and applying rigorous statistical methods to complex observational data from public health settings.\n\nI have one peer-reviewed publication in PLoS ONE (a Q1 journal) on estimating the causal effect of maternal continuum of care on child nutrition in Bangladesh using multilevel propensity score methods.\n\nTwo additional works are currently under review — one on g-computation for causal effect estimation in hierarchical observational data, and one on estimation of the median odds ratio for measuring contextual effects in multilevel binary data — preprints of both are available on arXiv. See full list of publications →\n\nResearch Interests\n\nCausal Inference\nHierarchical Modeling\nBayesian Inference\nSensitivity Analysis\nSurvival Analysis\nConformal Prediction"
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e69667920636c61726974793a6272696566636173652d6c696e65203e7d7d-work-experience",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e69667920636c61726974793a6272696566636173652d6c696e65203e7d7d-work-experience",
     "title": "Shafayet Khan Shafee",
     "section": " Work Experience",
     "text": "Work Experience\n\nData Scientist II @ Pathao Pay  Jan, 2026 - Present  Dhaka, Bangladesh\nData Scientist I @ Pathao Pay  Jan, 2025 - Dec, 2025  Dhaka, Bangladesh\nGraduate Data Scientist @ Pathao Ltd.  July, 2023 - Dec, 2024  Dhaka, Bangladesh"
   },
   {
-    "objectID": "index.html#technical-skills",
-    "href": "index.html#technical-skills",
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e69667920666c75656e743a77696e646f772d6465762d746f6f6c732d32302d726567756c6172203e7d7d-technical-skills",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e69667920666c75656e743a77696e646f772d6465762d746f6f6c732d32302d726567756c6172203e7d7d-technical-skills",
     "title": "Shafayet Khan Shafee",
     "section": " Technical Skills",
-    "text": "Technical Skills\nBuilt on a strong foundation in statistical methodologies, ranging from probability theory, statistical inference, and hypothesis testing to survival analysis, multilevel modeling, Bayesian methods, and causal inference, I work across the broader landscape of modern data science and software development. I build end-to-end data transformation pipelines using tools like dbt, bash scripting, manage CI/CD workflows with GitHub Actions, and develop automated reporting dashboards in Google Sheets using Google AppsScript and BigQuery, as well as dynamic dashboards in Looker Studio.\nMy experience includes developing and productionizing machine-learning models and pipelines with Kedro, MLflow, and containerized deployments using Docker. I support polyglot data-science workflows with deep expertise in R complemented by effective integration of Python when needed."
+    "text": "Technical Skills\n\nStatistics & Experimentation: Frequentist & Bayesian Inference, Hypothesis Testing, Causal Inference (IPW, Matching, Diff-in-Diff), A/B Testing, Survival Modeling, Time Series Analysis.\nMachine Learning: Ensemble Methods, Causal ML (Double/Debiased ML, Generalized Random Forests, BART), Conformal Prediction, Model Calibration.\nData & ML Engineering: dbt, Kedro, MLflow, Docker, Bash Scripting.\nBI & Analytics: BigQuery, Looker Studio, Mixpanel.\nCI/CD & Version Control: GitHub Actions, GitLab CI, Git.\nProgramming Languages: R, Python, SQL."
   },
   {
-    "objectID": "index.html#open-source-contributions",
-    "href": "index.html#open-source-contributions",
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679207261706861656c3a6f70656e736f75726365203e7d7d-open-source-contributions",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679207261706861656c3a6f70656e736f75726365203e7d7d-open-source-contributions",
     "title": "Shafayet Khan Shafee",
     "section": " Open Source Contributions",
-    "text": "Open Source Contributions\nI contribute to open-source projects across R, Python, and the Quarto ecosystem. My work includes developing  packages such as MOR and skmisc, as well as  packages like skmiscpy for causal effect estimation and kedrogen, a CLI tool for scaffolding reproducible Kedro project structures. I have also developed a range of Quarto extensions (e.g., downloadthis, line-highlight, and interactive-sql), using Lua, HTML/CSS, and JavaScript to support more efficient and user-friendly scientific publishing workflows."
+    "text": "Open Source Contributions\nMy OSS work spans R, Python, and the Quarto ecosystem. On the R side, I’ve developed MOR and skmisc, and on the Python side, skmiscpy for causal effect estimation and kedrogen, a CLI tool for scaffolding reproducible Kedro project structures. I’ve also built a range of Quarto extensions (e.g., downloadthis, line-highlight, and interactive-sql) to support more efficient scientific publishing workflows."
   },
   {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e69667920716c656d656e74696e652d69636f6e733a656475636174696f6e2d3234203e7d7d-education",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e69667920716c656d656e74696e652d69636f6e733a656475636174696f6e2d3234203e7d7d-education",
     "title": "Shafayet Khan Shafee",
     "section": " Education",
-    "text": "Education\n\nM.Sc. in Applied Statistics, 2023  Grade: 3.97 out of 4.00  ISRT, University of Dhaka, Bangladesh\nB.Sc. in Applied Statistics, 2021  Grade: 3.96 out of 4.00  ISRT, University of Dhaka, Bangladesh"
+    "text": "Education\n\n2023 M.Sc. in Applied Statistics\nGrade: 3.97 out of 4.00  ISRT, University of Dhaka, Bangladesh \n\nMultilevel Modeling Causal Inference Bayesian Inference Spatial Statistics Signal Processing Statistical Machine Learning R Python SQL\n\n2021 B.Sc. in Applied Statistics\nGrade: 3.96 out of 4.00  ISRT, University of Dhaka, Bangladesh \n\nCalculus Linear Algebra Mathematical Analysis Sampling Distributions Statistical Inference Stochastic Processes Linear Regression Analysis Generalized Linear Models Multivariate Statistics Bayesian Inference Design and Analysis of Experiments Sampling Methods Industrial Statistics Operations Research Survival Analysis Analysis of Time Series Epidemiology Econometrics C Excel Octave SPSS Stata Minitab R\n\n2017 H.S.C. (Science)\nGrade: 5.00 out of 5.00  Dhaka, Bangladesh"
   },
   {
-    "objectID": "index.html#research-publications",
-    "href": "index.html#research-publications",
-    "title": "Shafayet Khan Shafee",
-    "section": " Research & Publications",
-    "text": "Research & Publications\nI have one peer-reviewed publication in PLoS ONE (a Q1 journal), with two additional works currently under review, preprints of which are available on arXiv. See details here"
-  },
-  {
-    "objectID": "index.html#honors-awards",
-    "href": "index.html#honors-awards",
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d64693a74726f7068792d6177617264203e7d7d-honors-awards",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d64693a74726f7068792d6177617264203e7d7d-honors-awards",
     "title": "Shafayet Khan Shafee",
     "section": " Honors & Awards",
-    "text": "Honors & Awards\n\nDean’s Award, Faculty of Science, University of Dhaka · 2021  Awarded in recognition of academic excellence.  \nConference Award for Scientists, ISCB45 · 2024  Awarded at the 45th Annual Conference of the International Society for Clinical Biostatistics (ISCB45), Thessaloniki, Greece, July 21–25, 2024, for the abstract titled “Interval Estimation of the Median Odds Ratio for Measuring Contextual Effects in Multilevel Data Using a Binary Logistic Model.” [Abstract Book]\nNational Science and Technology (NST) Fellowship · Oct 2023  Issued by the Ministry of Science and Technology, Government of Bangladesh, for thesis research on multilevel modeling during M.Sc. at the University of Dhaka."
+    "text": "Honors & Awards\n\n2024 Conference Award for Scientists — ISCB45  Awarded at the 45th Annual Conference of the International Society for Clinical Biostatistics (ISCB45), Thessaloniki, Greece, July 21–25, 2024, for the abstract titled “Interval Estimation of the Median Odds Ratio for Measuring Contextual Effects in Multilevel Data Using a Binary Logistic Model.”\n[Abstract Book →]\n2023 National Science and Technology (NST) Fellowship  Issued by the Ministry of Science and Technology (MoST), Government of Bangladesh, for thesis research on multilevel modeling during M.Sc. at the University of Dhaka.\n2021 Dean’s Award  Awarded by the Faculty of Science, University of Dhaka, in recognition of academic excellence throughout the B.Sc. programme."
   },
   {
-    "objectID": "index.html#interests",
-    "href": "index.html#interests",
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a696e74657265737473203e7d7d-work-interests",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a696e74657265737473203e7d7d-work-interests",
     "title": "Shafayet Khan Shafee",
-    "section": " Interests",
-    "text": "Interests\n\nCausal Inference\nExperimentation\nHierarchical Modeling\nBayesian Inference\nPredictive Modeling\nTime Series Forecasting\nReproducible Research\nOpen Source Contributions\nR & Python Pkg Development\nData Visualisation & Storytelling"
+    "section": " Work Interests",
+    "text": "Work Interests\n\nCausal Inference\nExperimentation\nHierarchical Modeling\nBayesian Inference\nPredictive Modeling\nTime Series Forecasting\nReproducible Research\nOpen Source Contributions\nR & Python Pkg Development\nData Visualisation & Storytelling"
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "Shafayet Khan Shafee",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nAll em-dashes are mine!↩︎"
   }
 ]
