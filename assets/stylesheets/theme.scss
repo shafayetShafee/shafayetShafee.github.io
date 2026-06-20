@@ -1,11 +1,8 @@
 /*-- scss:defaults --*/
-
 $pub-padding: 1.2rem 1.4rem;
 
-// $mc-accent is defined _extensions/mickaelcanouilfr/scss/_rules.scss
 
 /*-- scss:rules --*/
-
 .about-body {
   margin-top: 1rem !important;
 }
@@ -92,7 +89,7 @@ $pub-padding: 1.2rem 1.4rem;
       flex-wrap: wrap;
       gap: 0.05rem;
       max-width: 35rem;
-      margin-top: 0.3rem;
+      margin-top: 0.8rem;
   
       .tag {
         display: inline-block;
@@ -132,7 +129,7 @@ $pub-padding: 1.2rem 1.4rem;
     }
   
     .coursework-tags::before {
-      content: "Coursework";
+      content: "Selected Coursework";
     }
   
     .tools-tags::before {
@@ -217,7 +214,7 @@ $pub-padding: 1.2rem 1.4rem;
         background: $body-bg;
         border: 2px solid $mc-accent;
         color: $mc-accent;
-        font-family: $font-family-serif;
+        font-family: "Georgia", "Iowan Old Style", "Apple Garamond", serif;
         font-weight: 700;
         font-size: 0.78rem;
         box-shadow: 0 0 0 4px $body-bg;
@@ -282,3 +279,7 @@ $pub-padding: 1.2rem 1.4rem;
   }
 }
 
+
+.drop-cap {
+  font-size: 3rem;
+}

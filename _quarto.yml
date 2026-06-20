@@ -3,7 +3,7 @@ project:
   render:
     - "*.qmd"
     - "!uv-cache/"
-  
+
 execute:
   freeze: auto
 
@@ -69,12 +69,12 @@ website:
         rel: noopener noreferrer
         aria-label: "GitHub profile"
 
-
 format:
   mickaelcanouilfr-html:
-    smooth-scroll: true
     theme:
-      light: 
+      light:
         - assets/stylesheets/theme.scss
-      dark: 
+        - assets/stylesheets/theme-light.scss
+      dark:
         - assets/stylesheets/theme.scss
+        - assets/stylesheets/theme-dark.scss
