@@ -43,6 +43,14 @@ website:
         text: About
       - href: publications/index.qmd
         text: Publications
+      - text: CV
+        menu: 
+          - text: Professional
+            href: assets/cv/job-cv.pdf
+            target: _blank
+          - text: Academic
+            href: assets/cv/academic-cv.pdf
+            target: _blank
       - icon: mastodon
         href: https://fosstodon.org/@shafayet_shafee
         target: _blank
