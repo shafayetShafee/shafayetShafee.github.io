@@ -21,6 +21,10 @@ quarto render
 > to activate the `venv` using `source venv/bin/activate`. Quarto detects this
 > `venv` following from `QUARTO_PYTHON=./venv/bin/python` defined in `_environement.yml`
 
+```bash
+quarto render --no-cache && quarto preview .
+```
+
 ## Publishing
 
 ### Full workflow before publishing
@@ -79,7 +83,7 @@ quarto preview
 Or to re-run everything at once:
 
 ```bash
-quarto render --no-freeze
+quarto render --no-cache
 ```
 
 ## Adding a New Publication

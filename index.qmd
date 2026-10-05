@@ -99,10 +99,12 @@ using multilevel propensity score methods.
 
 :::
 
-Two additional works are currently under review &mdash; one on g-computation for 
-causal effect estimation in hierarchical observational data, and one on estimation 
+Three additional works are currently under review &mdash; one on g-computation for 
+causal effect estimation in hierarchical observational data, one on estimation 
 of the median odds ratio for measuring contextual effects in multilevel binary 
-data &mdash; preprints of both are available on arXiv. [See full list of publications &rarr;](publications/index.qmd)
+data, and one on quantifying inconsistent mediation through the Mediated Magnitude 
+Share and the degree of suppression &mdash; preprints of all three are available 
+on arXiv. [See full list of publications &rarr;](publications/index.qmd)
 
 ::: {.interests}
 

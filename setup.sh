@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VENV_PYTHON_VERSION=${1:-"3.9.6"}
+VENV_PYTHON_VERSION=${1:-"3.11.6"}
 
 ROOT_PROJECT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd "$ROOT_PROJECT_DIR"
